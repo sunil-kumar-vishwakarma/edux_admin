@@ -213,7 +213,7 @@
  
            <br><br>
             <div class="blue2">
-              <div class="content2">
+              <div class="why-edux">
                <div>
                   <h1>Why Choose Edu-X?</h1>
                   <p>
@@ -240,7 +240,7 @@
 
             
             <h1 class="blog">Our Latest Blogs</h1>
-
+            <div class="event-cards">
             <div class="card1">
               <div class="row row-cols-1 row-cols-md-3 g-4" id=card1>
                 <div class="col">
@@ -276,7 +276,7 @@
                     <button><a href="webinar-readmore.html">Read More</a></button>
                   </div>
                 </div>
-               
+               </div>
                   </div>
                 </div>
           </div>

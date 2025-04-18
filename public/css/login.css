@@ -45,6 +45,19 @@ html, body {
     border-radius: 10px;
 }
 
+.custom-footer-col img {
+    max-height: 70px;
+    margin:auto;
+    margin-bottom:20px;
+  }
+  
+  .custom-footer-copy p{
+     color:white;
+     text-align:center;
+     font-weight:bold;
+     opacity:.7;
+  }
+
 /* Blue highlight for DASH */
 .dash-highlight {
     color: #0dcaf0; 

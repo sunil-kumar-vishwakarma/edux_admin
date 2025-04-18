@@ -498,6 +498,7 @@
 /*                    margin-top:3px;*/
 /*                }*/
 
+   
        
 
         .dropdown-menu {
@@ -513,7 +514,7 @@
             display: none;
             z-index: 10;
             /*color:#2E2EFF;*/
-            transform: translateX(418%);
+           
         }
 
         .dropdown-item {
@@ -2260,7 +2261,7 @@ body {
   </div>
   </section>
 
-     <!-- footer -->
+     <!--   -->
 
     
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">

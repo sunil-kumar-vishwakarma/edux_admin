@@ -1,159 +1,17 @@
 
-/* Navbar styling */
-
-.navbar {
-    background-color: #1652b4;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+.custom-footer-col img {
+  max-height: 70px;
+  margin:auto;
+  margin-bottom:20px;
 }
 
-
-.navbar-brand div{
-    font-size: 27px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-weight: bold;
-    margin-top: 17px;
+.custom-footer-copy p{
+   color:white;
+   text-align:center;
+   font-weight:bold;
+   opacity:.7;
 }
 
-
-.navbar-brand{
-    display: flex;
-    gap: 15px;
-}
-
-.navbar-brand img {
-    height: 70px !important;
-    width: auto;
-}
-
-/* Center navbar links on larger screens */
-.navbar-nav {
-    gap: 15px;
-}
-
-.navbar-nav .nav-link {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 5px 15px;
-    position: relative;
-    font-size:17px;
-}
-
-.navbar-nav .nav-link:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -8px;
-    height: 2px;
-    background-color: white;
-    border-radius: 1px;
-}
-
-.navbar-toggler {
-  border: none; /* Add a border to make it visible */
-
-  padding: 0.5rem; /* Add some padding */
-  color: #000; /* Ensure the icon is visible */
-}
-
-/* Adjust the toggler icon */
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23000'%3E%3Cpath d='M0 7h30v3H0zm0 7h30v3H0zm0 7h30v3H0z'/%3E%3C/svg%3E");
-}
-
-/* Buttons styling */
-.btn-custom {
-    color: white;
-    background-color: blue;
-    font-weight: bold;
-    border: 0.5px solid white;
-    padding: 8px 20px;
-    margin:5px;
-    border-radius: 7px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.btn-custom:hover {
-    background-color: white;
-    color: black;
-}
-
-
-#down{
-    transform:translateY(23px);
-}
-
-
-.dropdown-btn{
-    text-decoration:none;
-}
-       
-
-        .dropdown-menu {
-            padding-top:-400px;
-            position: absolute;
-            top: 80%;
-            left: 0;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 200px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: none;
-            z-index: 10;
-            /*color:#2E2EFF;*/
-            transform: translateX(418%);
-        }
-
-        .dropdown-item {
-            padding: 5px 10px;
-            cursor: pointer;
-            color:#2E2EFF;
-            text-align: left;
-            font-weight:bold;
-            padding-top:-10px;
-        }
-
-        .dropdown-item:hover {
-            background-color: #f0f0f0;
-        }
-   
-        #dropdownBtn {
-    transform: translateY(-10.8px);
-    text-decoration:none;
-}
-
-.nav-item #drp{
-    text-decoration:none;
-}
-        
-
-.d-flex a{
-  background-color:blue;
-  color: white;
-  font-weight: 550;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-
-.underline  ul li a:hover  {
-  text-decoration: underline;  
-  text-decoration-thickness: 3px;
-  text-decoration-color: #fff; 
-  color: #fff;
-  text-underline-offset: 15px; 
-}
-
-   /*! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com*/
       *,
       :after,
       :before {
@@ -771,7 +629,7 @@ margin-left: 42px;
   }
 }
 
-.content2{
+.why-edux{
   margin-top: 20px;
   background-color: #5089e3;
   width: 70%;
@@ -788,14 +646,14 @@ margin-left: 42px;
 }
 
 
-.content2 h1{
+.why-edux h1{
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: bold;
 }
 
 
-.content2 p
+.why-edux p
 {
   font-size: 20px;
   max-width: 500px;
@@ -852,6 +710,12 @@ margin-left: 42px;
  margin-left: 200px;
   }
 
+
+  .event-cards{
+    margin-top: 300px;
+    display: flex;
+    gap: 30px;
+  }
 
   
   /* Card styling */
@@ -989,21 +853,9 @@ margin-top: 50px;
         font-size: 14px;
     }
 
-    .footer {
-        padding: 50px 10px;
-        transform: translateY(100px);
-    }
+  
 
-    .footer-column {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .footer-column h2, .footer-column h3 {
-        margin-left: 10px;
-    }
-
-    .content1, .content2 {
+    .content1, .why-edux {
         flex-direction: column;
         padding: 40px;
         text-align: center;
@@ -1030,10 +882,7 @@ margin-top: 50px;
         width: 250px;
     }
 
-    .footer-column ul li a {
-        font-size: 16px;
-      
-    }
+ 
 
     #txt {
         font-size: 16px;
@@ -1050,7 +899,7 @@ margin-top: 50px;
         font-size: 30px;
     }
 
-    .content2 p {
+    .why-edux p {
         font-size: 18px;
     }
 
@@ -1101,9 +950,7 @@ margin-top: 50px;
         height: 400px;
     }
 
-    .footer-row {
-        flex-direction: column;
-    }
+  
 }
 
 /* Tablet (portrait) */
@@ -1126,21 +973,14 @@ margin-top: 50px;
             text-align:center;
     }
 
-    .footer-column {
-        width: 50%;
-        max-width: 250px;
-    }
-
-    .footer-column h2, .footer-column h3 {
-        margin-left: 20px;
-    }
+  
     
-    .blue4, .content2{
+    .blue4, .why-edux{
                margin: -42px 21px;
         width: 100vw;
     }
 
-    .content1, .content2 {
+    .content1, .why-edux {
         padding: 20px;
         flex-direction: column;
         width: 100vw;
@@ -1249,25 +1089,16 @@ margin-top: 50px;
 
 
 
-    .content2 h1 {
+    .why-edux h1 {
         font-size: 30px;
     }
 
 
-    .content2 p {
+    .why-edux p {
         font-size: 18px;
     }
 
-    .footer-row {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-
-    .footer-column ul li a {
-        font-size: 16px;
-    }
-
+   
     #txt {
         font-size: 18px;
     }
@@ -1320,21 +1151,14 @@ margin-top: 50px;
             text-align:center;
     }
 
-    .footer-column {
-        width: 50%;
-        max-width: 250px;
-    }
-
-    .footer-column h2, .footer-column h3 {
-        margin-left: 20px;
-    }
+ 
     
-    .blue4, .content2{
+    .blue4, .why-edux{
         margin: -42px 25px;
         width: 100vw;
     }
 
-    .content1, .content2 {
+    .content1, .why-edux{
         padding: 20px;
         flex-direction: column;
         width: 100vw;
@@ -1438,24 +1262,18 @@ margin-top: 50px;
 
 
 
-    .content2 h1 {
+    .why-edux h1 {
         font-size: 30px;
     }
 
 
-    .content2 p {
+    .why-edux p {
         font-size: 18px;
     }
 
-    .footer-row {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    
 
 
-    .footer-column ul li a {
-        font-size: 16px;
-    }
 
     #txt {
         font-size: 18px;
@@ -1506,15 +1324,7 @@ margin-top: 50px;
         font-size: 18px;
     }
 
-    .footer-column {
-        width: 20%;
-        max-width: 270px;
-    }
-
-    .footer-column h2, .footer-column h3 {
-        margin-left: 32px;
-    }
-
+  
     .content1 {
         display: flex;
         justify-content: space-between;
@@ -1548,11 +1358,7 @@ margin-top: 50px;
         padding: 10px 25px;
     }
 
-    .footer-column ul li a {
-        font-size: 18px;
-                display: ruby-text;
-        
-    }
+
 
     .card1 img {
         width: 100%;
@@ -1568,7 +1374,7 @@ margin-top: 50px;
         font-size: 35px;
     }
 
-    .content2 p {
+    .why-eduxp {
         font-size: 20px;
     }
 

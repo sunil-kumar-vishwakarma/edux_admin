@@ -2,6 +2,7 @@
 
 // use App\Http\Controllers\Auth\ForgotPasswordController;
 // use App\Http\Controllers\Auth\ResetPasswordController;
+
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CityController;
@@ -20,6 +21,7 @@ use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SMSController;
 
 
 
@@ -28,6 +30,15 @@ use Illuminate\Support\Facades\Route;
 //     return view('home');
 // });
 
+Route::get('/send-sms', [SMSController::class, 'sendTestSMS']);
+
+// In routes/web.php
+Route::get('/send-otp', function () {
+    return view('send-otp'); // Display the form
+});
+
+
+Route::post('/send-otp', [SMSController::class, 'sendOTP']);
 
 Route::get('/admin/login', function () {
     return view('admin.login');

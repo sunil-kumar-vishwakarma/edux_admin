@@ -124,7 +124,7 @@
 
 <!-- Hero Section -->
 <div class="hero" id="Personalized">
-<div class="hero-logo">
+<div class="navbar-brand">
   <img src="{{asset('images/edu-x white.png')}}" alt="Edu-X Logo" >
 </div>
 <hr class="css-fysqf">
@@ -171,16 +171,16 @@
 
 
 
-<div class="hero" id="added">
+<div class="added">
   <div class="hero-logo">
-    <h3 class="add-program student-add-program">New Programs Added Everyday</h3>
+  <h3 class="add-program student-add-program">New Programs Added Everyday</h3>
   </div class="desc-section">
   <section class="add-program"><h1 class="add-program student-add-program">57160</h1>Program to Discover we aim to be the #1 resource for student seeking study, adding new programs every day!</section>
  
   <section class="add-program"><h1 class="add-program student-add-program">4657</h1>Colleges and Universities Across our eight verticals, you can find a veriety of institutions of all types Across all desciplines and subjects.</section>
 
   <section class="add-program"><h1 class="add-program student-add-program">33</h1>languages and growing! Find potential colleges and universities from all over the world in your native language.</section>
-  </div>
+  </div> 
   
   <!-- Dream Destination Section -->
   <section class="destinations-section">
@@ -243,6 +243,8 @@
 }
 
 .card-students {
+    border: 1px solid #afacac;
+    padding: 10px;
     width: 300px; /* Adjust width as needed */
     background: #fff;
     border-radius: 10px;

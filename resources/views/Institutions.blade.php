@@ -182,7 +182,6 @@ padding-left: 10px;
             display: none;
             z-index: 10;
             /*color:#2E2EFF;*/
-            transform: translateX(418%);
         }
 
         .dropdown-item {

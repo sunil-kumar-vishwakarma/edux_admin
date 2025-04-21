@@ -1,7 +1,7 @@
 <footer class="custom-footer">
   <div class="custom-footer-container">
     <div class="custom-footer-row">
-      
+
       <!-- Column 1 -->
       <div class="custom-footer-col">
         <a class="navbar-brand" href="/">

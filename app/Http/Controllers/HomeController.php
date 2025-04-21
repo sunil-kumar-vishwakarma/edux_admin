@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Home;
+use App\Models\Blog;
+
 
 class HomeController extends Controller
 {
     //
 
-    
+
     // public function home(){
     //     $home = Home::all();
     //     return view('home.index', compact('home'));
@@ -53,7 +55,7 @@ class HomeController extends Controller
         return view('partner', compact('home'));
 
     }
-    
+
     public function institutions(){
             $institutions = Home::all();
 
@@ -65,10 +67,10 @@ class HomeController extends Controller
         return view('events', compact('events'));
     }
 
-    public function blogs(){
-        $blogs = Home::all();
-            return view('blog', compact('blogs'));
-        }
+    // public function blogs(){
+    //     $blogs = Home::all();
+    //         return view('blog', compact('blogs'));
+    //     }
     public function search(){
         $search = Home::all();
             return view('search', compact('search'));
@@ -102,4 +104,15 @@ class HomeController extends Controller
         $terms_and_condition = Home::all();
             return view('terms_and _condition', compact('terms_and_condition'));
         }
+
+
+        public function blogs()
+        {
+            $blogs = Blog::where('status', 'Published')
+                         ->orderBy('published_date', 'desc')
+                         ->get();
+
+            return view('blog', compact('blogs')); // assuming your blade is resources/views/blog.blade.php
+        }
+
 }

@@ -27,7 +27,7 @@
                 <!-- Hover Dropdown -->
               <li class="nav-item dropdown-hover">
     <a class="nav-link dropdown-toggle" href="#">
-        Discover 
+        Discover
     </a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="{{ route('student') }}">Student Services</a></li>

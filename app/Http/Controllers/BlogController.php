@@ -118,4 +118,12 @@ class BlogController extends Controller
 
         return response()->json($blog);
     }
+    public function blogs()
+{
+    // Show only published blogs
+    $blogs = Blog::where('status', 'Published')->orderBy('published_date', 'desc')->get();
+
+    return view('blog', compact('blogs'));
+}
+
 }

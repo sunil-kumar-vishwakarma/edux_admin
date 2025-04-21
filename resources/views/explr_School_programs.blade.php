@@ -327,7 +327,7 @@ header {
     color: #555;
     font-size: 18px;
     text-decoration: underline;
-    
+
 }
 .program-card p a:hover {
     text-decoration: underline;
@@ -459,7 +459,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    
+
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -507,10 +507,10 @@ header {
 }
 
 @media (max-width: 480px) {
-   
+
     .search-container-wrapper {
         flex-direction: column;
-        align-items: stretch; 
+        align-items: stretch;
     }
 
     .search-container {
@@ -594,7 +594,7 @@ header {
         grid-template-columns: 1fr;
     }
 
-  
+
 }
 
 
@@ -602,8 +602,8 @@ header {
     color:white;
 }
 </style>
- 
-   
+
+
     <br>
 <br><br><br><br>
     <!-- Buttons above header -->
@@ -857,7 +857,7 @@ header {
     <br>
      <br>
 
-  
+
 
    <script src="explore.js"></script>
 
@@ -880,7 +880,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Add active class to the clicked button
             button.classList.add("active2");
-     
+
             // Update video source based on the clicked button
             const target = button.getAttribute("data-target");
             videoSource.src = videoSets[target];
@@ -944,7 +944,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".tab-btn");
   const tabContents = document.querySelectorAll(".tab-content");
   const heroImages = document.querySelector(".hero-images");
-  
+
   // Define image sets for each tab
   const imageSets = {
     students: [
@@ -1008,7 +1008,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function () {
       // Get the target section ID
       const target = this.getAttribute('data-target');
-      
+
       // Hide all content sections
       sections.forEach(section => {
         section.classList.remove('active-content');
@@ -1021,4 +1021,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
- 
+

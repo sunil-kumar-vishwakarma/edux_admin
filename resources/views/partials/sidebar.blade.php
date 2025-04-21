@@ -36,6 +36,12 @@
         </li>
 
         <li class="menu-item">
+            <a href="{{ route('discover_program-list') }}" class="{{ request()->routeIs('discover_program-list') ? 'active' : '' }}">
+                <i class="fas fa-graduation-cap icon"></i>
+                Discover Program</a>
+        </li>
+
+        <li class="menu-item">
             <a href="{{ route('partners-list') }}" class="{{ request()->routeIs('partners-list') ? 'active' : '' }}">
                 <i class="fas fa-handshake icon"></i>
                 Partner List</a>
@@ -48,7 +54,7 @@
 
         </li>
 
-        <li class="menu-item dropdown">
+        {{-- <li class="menu-item dropdown">
             <i class="fas fa-wrench icon"></i> Manage ▼
             <ul class="submenu">
                 <li class="submenu-item"><a href="{{ route('manage-home') }}"
@@ -58,7 +64,7 @@
                 <li class="submenu-item"><a href="{{ route('manage-contact') }}"
                         class="{{ request()->routeIs('manage-contact') ? 'active' : '' }}">Manage Contact</a></li>
             </ul>
-        </li>
+        </li> --}}
 
         <li class="menu-item">
             <a href="{{ route('blog.index') }}" class="{{ request()->routeIs('blog.index') ? 'active' : '' }}">

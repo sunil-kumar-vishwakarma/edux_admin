@@ -22,6 +22,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SMSController;
+use App\Http\Controllers\ProgramController;
 
 
 
@@ -64,6 +65,8 @@ Route::get('/home', [HomeController::class, 'homePage'])->name('home');
     Route::get('/events', [HomeController::class, 'events'])->name('events');
     Route::get('/blogs-pages', [HomeController::class, 'blogs'])->name('blogs-pages');
     Route::get('/search', [HomeController::class, 'search'])->name('search');
+    // Route::get('/search', [ProgramController::class, 'search'])->name('search');
+
     Route::get('/web', [HomeController::class, 'web'])->name('web');
     Route::get('/webinar', [HomeController::class, 'webinar'])->name('webinar');
     Route::get('/webinar/learnmore', [HomeController::class, 'webinarLearnmore'])->name('webinar.learnmore');
@@ -144,6 +147,19 @@ Route::middleware(['auth'])->group(function () {
 
 
 
+    // discover_program Routes
+    Route::get('/discover_program-list', [ProgramController::class, 'index'])->name('discover_program-list');
+    Route::get('/discover_program', [ProgramController::class, 'index'])->name('discover_program.index');
+    Route::get('/discover_program/create', [ProgramController::class, 'create'])->name('discover_program.create');
+    Route::post('/discover_program', [ProgramController::class, 'store'])->name('discover_program.store');
+    Route::get('/discover_program/{id}', [ProgramController::class, 'show'])->name('discover_program.show');
+    Route::get('/discover_program/{student}/edit', [ProgramController::class, 'edit'])->name('discover_program.edit');
+    Route::put('/discover_program/{student}', [ProgramController::class, 'update'])->name('discover_program.update');
+    Route::delete('/discover_program/{discover_program}', [ProgramController::class, 'destroy'])->name('discover_program.destroy');
+    Route::post('/discover_program/{id}/toggle-status', [ProgramController::class, 'toggleStatus']);
+
+
+
     // Partner Routes
     Route::get('/partners-list', [PartnerController::class, 'index'])->name('partners-list');
     Route::get('/partners', [PartnerController::class, 'index'])->name('partners.index');
@@ -206,7 +222,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
-    // Home Route 
+    // Home Route
 
-    
+
 });

@@ -5,9 +5,9 @@
 
     <style>
       /* Global Styles */
-  
-      
-      
+
+
+
       .navbar-brand{
     display: flex;
     gap: 15px;
@@ -18,7 +18,7 @@
     height: 70px !important;
     width: auto;
         margin-left: 17.5px;
-    
+
 }
 
 
@@ -29,7 +29,7 @@
     font-weight: bold;
     margin-top: 17px;
 }
-    
+
         .login-signup a {
     background-color: blue;
     color: white;
@@ -111,7 +111,7 @@ color: white;
 }
 
 
-      
+
 .sidebar {
     background-color: white;
     color: rgb(96, 106, 132);
@@ -819,7 +819,7 @@ color: white;
       display: inline-flex;
       align-items: center;
       gap: 5px;
-    
+
     }
 
     .sort{
@@ -856,14 +856,14 @@ color: white;
 
     .dropdown-content1 a i{
         font-size: 20px;
-     
+
     }
 
 
     #circl{
         margin-left: -3px;
     }
-   
+
 
 
     .dropdown-content1 a:hover {
@@ -948,7 +948,7 @@ color: white;
       font-size: 17px;
       margin-bottom: 10px;
       display: flex;
-     
+
     }
 
     #tgl{
@@ -1026,7 +1026,7 @@ color: white;
 
         .program-cards {
           grid-template-columns: repeat(2, 1fr);
-         
+
         }
       }
 
@@ -1073,9 +1073,9 @@ color: white;
 
         .program-cards {
           grid-template-columns: 1fr;
-         
+
         }
-        
+
         .pagination{
             display: ruby-text;;
         }
@@ -1097,14 +1097,14 @@ color: white;
         }
 
         .search-bar {
-          flex: 1; 
-          padding-left: 35px; 
+          flex: 1;
+          padding-left: 35px;
           font-size: 14px;
         }
 
         .search-icon {
-          
-          margin-left: 5px; 
+
+          margin-left: 5px;
         }
 
         .dropdowns {
@@ -1116,8 +1116,8 @@ color: white;
         .dropdown {
           font-size: 12px;
           padding: 8px;
-          width: 100%; 
-          box-sizing: border-box; 
+          width: 100%;
+          box-sizing: border-box;
         }
 
         .filters {
@@ -1127,7 +1127,7 @@ color: white;
         }
 
         .filter-item select {
-          width: 100%; 
+          width: 100%;
           font-size: 12px;
           padding: 10px;
           box-sizing: border-box;
@@ -1136,7 +1136,7 @@ color: white;
         .filter-btn {
           font-size: 12px;
           padding: 10px;
-          width: 100%; 
+          width: 100%;
           box-sizing: border-box;
         }
 
@@ -1154,12 +1154,12 @@ color: white;
         .sort {
           justify-content: center;
           flex-direction: column;
-          gap: 10px; 
+          gap: 10px;
           width: 100%;
         }
 
         .sort-btn {
-          width: 100%; 
+          width: 100%;
           font-size: 14px;
           padding: 10px;
         }
@@ -1167,10 +1167,10 @@ color: white;
         .program-cards {
           grid-template-columns: 1fr;
         }
-      } 
+      }
     </style>
  <br><br><br><br><br>
-  
+
 
     <!-- Buttons above header -->
     <div class="top-buttons">
@@ -1298,7 +1298,7 @@ color: white;
       <hr>
       <div class="results">
         <h2>2000+ Programs Found</h2>
-       
+
         <div class="sort">
           <button class="settings-btn" onclick="showPopup()"><i class="fa-sharp fa-solid fa-gear"></i> Display settings</button>
 
@@ -1323,7 +1323,7 @@ color: white;
 
           <button class="sort-btn" onclick="toggleDropdown3()">
             Sort <i class="fa-solid fa-arrow-down-short-wide"></i>
-           
+
           </button>
 
           <div class="dropdown-content1">
@@ -1748,4 +1748,4 @@ color: white;
 
     <script src="explore.js"></script>
 
-  
+

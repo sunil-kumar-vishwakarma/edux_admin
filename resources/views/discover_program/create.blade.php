@@ -31,10 +31,10 @@
             <input type="text" id="campus_city" name="campus_city" placeholder="Enter campus city" required>
 
             <label for="tuition">Tuition (1st year):</label>
-            <input type="number" id="tuition" name="tuition" placeholder="Enter tuition fee in CAD" required>
+            <input type="number" id="tuition" name="tuition" placeholder="Enter tuition fee" required>
 
             <label for="application_fee">Application Fee:</label>
-            <input type="number" id="application_fee" name="application_fee" placeholder="Enter application fee in CAD"
+            <input type="number" id="application_fee" name="application_fee" placeholder="Enter application fee"
                 required>
 
             <label for="duration">Duration:</label>

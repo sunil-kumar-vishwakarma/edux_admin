@@ -47,7 +47,7 @@
 
 <body>
     @include('includes.alerts')
-    <!-- @include('partials.sidebar') -->
+        <!-- @include('partials.sidebar') -->
     <div class="main-content">
         @include('frontent_partials.navbar')
         @yield('content')

@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Include DataTable CSS -->
-<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <!-- Include DataTable CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
-<!-- Include DataTable JS -->
-<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <!-- Include DataTable JS -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
 
 
@@ -41,7 +41,8 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>
-                            <img src="{{ asset('storage/' . $program->image) }}?v={{ $program->updated_at->timestamp }}" alt="University Logo" width="50">
+                            <img src="{{ asset('storage/' . $program->image) }}?v={{ $program->updated_at->timestamp }}"
+                                alt="University Logo" width="50">
                         </td>
                         <td>{{ $program->university_name }}</td>
                         <td>{{ $program->certificate }}</td>
@@ -107,17 +108,17 @@
 @endsection
 
 @section('scripts')
-<script>
-    $(document).ready(function () {
-        $('#customerTable').DataTable({
-            paging: true,       // Enable pagination
-            ordering: true,     // Enable column sorting
-            info: false,        // Hide "Showing X of Y" info
-            searching: false,   // Hide search box
-            lengthChange: false // Hide "Show X entries" dropdown
+    <script>
+        $(document).ready(function() {
+            $('#customerTable').DataTable({
+                paging: true, // Enable pagination
+                ordering: true, // Enable column sorting
+                info: false, // Hide "Showing X of Y" info
+                searching: false, // Hide search box
+                lengthChange: false // Hide "Show X entries" dropdown
+            });
         });
-    });
-</script>
+    </script>
 
 
 
@@ -204,19 +205,23 @@
 <style>
     .table-container {
         width: 100%;
-        overflow-x: auto; /* Enables horizontal scrolling */
-        margin-bottom: 20px; /* Optional: space below the table */
+        overflow-x: auto;
+        /* Enables horizontal scrolling */
+        margin-bottom: 20px;
+        /* Optional: space below the table */
     }
 
     .employer-table {
         width: 100%;
-        min-width: 1300px; /* Adjust based on your columns */
+        min-width: 1300px;
+        /* Adjust based on your columns */
         border-collapse: collapse;
     }
-    .employer-table td img{
+
+    .employer-table td img {
         width: 50px !important;
         height: 50px !important;
-        border-radius: 50% !important ;
+        border-radius: 50% !important;
 
     }
 

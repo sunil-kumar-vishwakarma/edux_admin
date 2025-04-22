@@ -26,7 +26,6 @@ use App\Http\Controllers\ProgramController;
 
 
 
-
 // Route::get('/', function () {
 //     return view('home');
 // });
@@ -54,26 +53,26 @@ Route::post('/admin/login', [AuthController::class, 'login'])->name('login.submi
 
 
 Route::get('/home', [HomeController::class, 'homePage'])->name('home');
-    Route::get('/', [HomeController::class, 'homePage']);
-    Route::get('/contactus', [HomeController::class, 'contactus'])->name('contactus');
-    Route::get('/student-register', [HomeController::class, 'studentRegister'])->name('student-register');
-    Route::get('/student-login', [HomeController::class, 'studentLogin'])->name('student-login');
-    Route::get('/student', [HomeController::class, 'student'])->name('student');
-    Route::get('/explr/school/programs', [HomeController::class, 'explrSchoolPrograms'])->name('explr_school_Programs');
-    Route::get('/partner', [HomeController::class, 'partner'])->name('partner');
-    Route::get('/institutions', [HomeController::class, 'institutions'])->name('institutions');
-    Route::get('/events', [HomeController::class, 'events'])->name('events');
-    Route::get('/blogs-pages', [HomeController::class, 'blogs'])->name('blogs-pages');
-    // Route::get('/search', [HomeController::class, 'search'])->name('search');
-    Route::get('/search', [ProgramController::class, 'search'])->name('search');
+Route::get('/', [HomeController::class, 'homePage']);
+Route::get('/contactus', [HomeController::class, 'contactus'])->name('contactus');
+Route::get('/student-register', [HomeController::class, 'studentRegister'])->name('student-register');
+Route::get('/student-login', [HomeController::class, 'studentLogin'])->name('student-login');
+Route::get('/student', [HomeController::class, 'student'])->name('student');
+Route::get('/explr/school/programs', [HomeController::class, 'explrSchoolPrograms'])->name('explr_school_Programs');
+Route::get('/partner', [HomeController::class, 'partner'])->name('partner');
+Route::get('/institutions', [HomeController::class, 'institutions'])->name('institutions');
+Route::get('/events', [HomeController::class, 'events'])->name('events');
+Route::get('/blogs-pages', [HomeController::class, 'blogs'])->name('blogs-pages');
+// Route::get('/search', [HomeController::class, 'search'])->name('search');
+Route::get('/search', [ProgramController::class, 'search'])->name('search');
 
-    Route::get('/web', [HomeController::class, 'web'])->name('web');
-    Route::get('/webinar', [HomeController::class, 'webinar'])->name('webinar');
-    Route::get('/webinar/learnmore', [HomeController::class, 'webinarLearnmore'])->name('webinar.learnmore');
-    Route::get('/webinar/readmore', [HomeController::class, 'webinarReadmore'])->name('webinar.readmore');
-    Route::get('/privacy/policy', [HomeController::class, 'privacyPolicy'])->name('privacy.policy');
-    Route::get('/edux-Fees', [HomeController::class, 'eduxFees'])->name('eduxfees');
-    Route::get('/term-and-condition', [HomeController::class, 'termAndCondition'])->name('term.and.condition');
+Route::get('/web', [HomeController::class, 'web'])->name('web');
+Route::get('/webinar', [HomeController::class, 'webinar'])->name('webinar');
+Route::get('/webinar/learnmore', [HomeController::class, 'webinarLearnmore'])->name('webinar.learnmore');
+Route::get('/webinar/readmore', [HomeController::class, 'webinarReadmore'])->name('webinar.readmore');
+Route::get('/privacy/policy', [HomeController::class, 'privacyPolicy'])->name('privacy.policy');
+Route::get('/edux-Fees', [HomeController::class, 'eduxFees'])->name('eduxfees');
+Route::get('/term-and-condition', [HomeController::class, 'termAndCondition'])->name('term.and.condition');
 
 
 Route::middleware(['auth'])->group(function () {
@@ -171,7 +170,7 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/partners/{partner}', [PartnerController::class, 'destroy'])->name('partners.destroy');
     Route::post('/partners/{partner}/toggle-status', [PartnerController::class, 'toggleStatus'])->name('partners.toggle-status');
 
-     // Enquiry Routes
+    // Enquiry Routes
     Route::get('/enquiries', [EnquiryController::class, 'index'])->name('enquiries.index');
     Route::get('/enquiries/{id}', [EnquiryController::class, 'show'])->name('enquiries.show');
     Route::post('enquiries/{id}/toggle-status', [EnquiryController::class, 'toggleStatus'])->name('enquiries.toggleStatus');
@@ -196,11 +195,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/blogs/{blog}', [BlogController::class, 'show'])->name('blogs.show');
 
     // Subscription Routes
-   Route::get('/subscriptions', [SubscriptionController::class, 'index'])->name('subscriptions.index');
-   Route::get('/subscriptions/{id}', [SubscriptionController::class, 'show']);
-   Route::delete('/subscriptions/{id}', [SubscriptionController::class, 'destroy'])->name('subscription.destroy');
-// In your routes/web.php, add a route to handle status updates
-   Route::post('/update-status/subscription/{id}', [SubscriptionController::class, 'updateStatus'])->name('subscription.updateStatus');
+    Route::get('/subscriptions', [SubscriptionController::class, 'index'])->name('subscriptions.index');
+    Route::get('/subscriptions/{id}', [SubscriptionController::class, 'show']);
+    Route::delete('/subscriptions/{id}', [SubscriptionController::class, 'destroy'])->name('subscription.destroy');
+    // In your routes/web.php, add a route to handle status updates
+    Route::post('/update-status/subscription/{id}', [SubscriptionController::class, 'updateStatus'])->name('subscription.updateStatus');
 
 
 

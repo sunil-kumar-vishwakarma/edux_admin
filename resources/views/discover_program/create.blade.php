@@ -44,14 +44,14 @@
             <input type="text" id="success_prediction" name="success_prediction" placeholder="e.g. High, Medium, Low"
                 required>
 
-            {{-- <label for="details">Details:</label>
-            <textarea id="details" name="details" placeholder="Enter program description or details" rows="4" required></textarea> --}}
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" placeholder="Enter program description or details" rows="4" required></textarea>
 
-            <label for="status">Status:</label>
+            {{-- <label for="status">Status:</label>
             <select id="status" name="status" required>
                 <option value="Active">Active</option>
                 <option value="Inactive">Inactive</option>
-            </select>
+            </select> --}}
 
             <button type="submit">Create Program</button>
         </form>

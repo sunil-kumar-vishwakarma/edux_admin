@@ -8,12 +8,30 @@ use Illuminate\Support\Facades\Storage;
 
 class ProgramController extends Controller
 {
-    // Show the list of programs
-    public function index()
+
+    public function index(Request $request)
     {
+        // Get sorting params
+        $sortField = $request->get('sort_field', 'university_name');
+        $sortOrder = $request->get('sort_order', 'asc');
+
+        // Paginate programs with sorting
+        $programs = Program::orderBy($sortField, $sortOrder)->paginate(10);
+
+
         $programs = Program::all();
         return view('discover_program.index', compact('programs'));
     }
+
+    public function search(Request $request)
+    {
+        $programs = Program::all();
+        $programs = Program::paginate(10); // Adjust per-page count as needed
+
+
+        return view('search', compact('programs'));
+    }
+
 
     // Show the form for creating a new program
     public function create()
@@ -37,7 +55,7 @@ class ProgramController extends Controller
             'duration' => 'required|string',
             'success_prediction' => 'required|string',
             'details' => 'required|string',
-            'status' => 'required|string|in:Active,Inactive',
+            // 'status' => 'required|string|in:Active,Inactive',
         ]);
 
         // Handle image upload
@@ -58,7 +76,7 @@ class ProgramController extends Controller
         $program->duration = $validated['duration'];
         $program->success_prediction = $validated['success_prediction'];
         $program->details = $validated['details'];
-        $program->status = $validated['status'];
+        // $program->status = $validated['status'];
 
         // Store the image path
         if ($imagePath) {
@@ -85,55 +103,34 @@ class ProgramController extends Controller
     }
 
     // Update a specific program
-    public function update(Request $request, Program $program)
+    public function update(Request $request, $id)
     {
-        $validated = $request->validate([
-            'university_name' => 'required|string|max:255',
-            'certificate' => 'required|string|max:255',
-            'college_name' => 'required|string|max:255',
-            'location' => 'required|string|max:255',
-            'campus_city' => 'required|string|max:255',
-            'tuition' => 'required|numeric',
-            'application_fee' => 'required|numeric',
-            'duration' => 'required|string|max:255',
-            'success_prediction' => 'required|string|max:255',
-            'details' => 'required|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Validation for image
-            'status' => 'nullable|string|in:Active,Inactive',
-        ]);
+        $program = Program::findOrFail($id);
 
-        // Store the old image if not updating
-        $imagePath = $program->image;
+        try {
+            // Update all fields except image
+            $program->update($request->except('image'));
 
-        // Handle image upload if a new file is provided
-        if ($request->hasFile('image')) {
-            // Delete old image if it exists
-            if ($program->image) {
-                Storage::disk('public')->delete($program->image);
+            // Handle image update
+            if ($request->hasFile('image')) {
+                // Delete old image if exists
+                if ($program->image && Storage::disk('public')->exists($program->image)) {
+                    Storage::disk('public')->delete($program->image);
+                }
+
+                // Store new image
+                $imagePath = $request->file('image')->store('program_images', 'public');
+                $program->image = $imagePath;
+                $program->save();
             }
 
-            // Store the new image
-            $imagePath = $request->file('image')->store('program_images', 'public');
+            return redirect()->route('discover_program.index')->with('success', 'Program updated successfully!');
+        } catch (\Exception $e) {
+            return redirect()->route('discover_program.index')->with('error', 'Failed to update program. Please try again.');
         }
-
-        // Update the program
-        $program->update([
-            'university_name' => $validated['university_name'],
-            'certificate' => $validated['certificate'],
-            'college_name' => $validated['college_name'],
-            'location' => $validated['location'],
-            'campus_city' => $validated['campus_city'],
-            'tuition' => $validated['tuition'],
-            'application_fee' => $validated['application_fee'],
-            'duration' => $validated['duration'],
-            'success_prediction' => $validated['success_prediction'],
-            'details' => $validated['details'],
-            'image' => $imagePath, // Store the image path (existing or new)
-            'status' => $validated['status'] ?? $program->status, // Default to existing status if not provided
-        ]);
-
-        return redirect()->route('discover_program.index')->with('success', 'Program updated successfully.');
     }
+
+
 
     // Delete a program
     public function destroy($id)
@@ -151,13 +148,12 @@ class ProgramController extends Controller
     }
 
     // Toggle status
-    public function toggleStatus($id)
-    {
-        $program = Program::findOrFail($id);
-        $program->status = ($program->status === 'Active') ? 'Inactive' : 'Active';
-        $program->save();
+    // public function toggleStatus($id)
+    // {
+    //     $program = Program::findOrFail($id);
+    //     $program->status = ($program->status === 'Active') ? 'Inactive' : 'Active';
+    //     $program->save();
 
-        return response()->json(['status' => $program->status]);
-    }
-
+    //     return response()->json(['status' => $program->status]);
+    // }
 }

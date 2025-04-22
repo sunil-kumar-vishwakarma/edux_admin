@@ -20,7 +20,7 @@ return new class extends Migration {
             $table->string('success_prediction');
             $table->text('details');
             $table->string('image');
-            $table->enum('status', ['Active', 'Inactive'])->default('Active');
+            // $table->enum('status', ['Active', 'Inactive'])->default('Active');
             $table->timestamps();
         });
     }

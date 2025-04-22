@@ -22,7 +22,7 @@ class Program extends Model
         'success_prediction',
         'details',
         'image',
-        'status'
+        // 'status'
     ];
 
     // If you want to access the image file path directly

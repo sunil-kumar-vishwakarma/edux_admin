@@ -64,8 +64,8 @@ Route::get('/home', [HomeController::class, 'homePage'])->name('home');
     Route::get('/institutions', [HomeController::class, 'institutions'])->name('institutions');
     Route::get('/events', [HomeController::class, 'events'])->name('events');
     Route::get('/blogs-pages', [HomeController::class, 'blogs'])->name('blogs-pages');
-    Route::get('/search', [HomeController::class, 'search'])->name('search');
-    // Route::get('/search', [ProgramController::class, 'search'])->name('search');
+    // Route::get('/search', [HomeController::class, 'search'])->name('search');
+    Route::get('/search', [ProgramController::class, 'search'])->name('search');
 
     Route::get('/web', [HomeController::class, 'web'])->name('web');
     Route::get('/webinar', [HomeController::class, 'webinar'])->name('webinar');
@@ -153,10 +153,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/discover_program/create', [ProgramController::class, 'create'])->name('discover_program.create');
     Route::post('/discover_program', [ProgramController::class, 'store'])->name('discover_program.store');
     Route::get('/discover_program/{id}', [ProgramController::class, 'show'])->name('discover_program.show');
-    Route::get('/discover_program/{student}/edit', [ProgramController::class, 'edit'])->name('discover_program.edit');
-    Route::put('/discover_program/{student}', [ProgramController::class, 'update'])->name('discover_program.update');
+    Route::get('/discover_program/{program}/edit', [ProgramController::class, 'edit'])->name('discover_program.edit');
+    Route::put('/discover_program/{id}', [ProgramController::class, 'update'])->name('discover_program.update');
     Route::delete('/discover_program/{discover_program}', [ProgramController::class, 'destroy'])->name('discover_program.destroy');
-    Route::post('/discover_program/{id}/toggle-status', [ProgramController::class, 'toggleStatus']);
+    // Route::post('/discover_program/{id}/toggle-status', [ProgramController::class, 'toggleStatus']);
 
 
 

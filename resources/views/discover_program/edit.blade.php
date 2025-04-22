@@ -8,7 +8,7 @@
     </header>
     <br><br>
 
-    <form class="edit-form" action="{{ route('discover_program.update', $program->id) }}" method="POST">
+    <form action="{{ route('discover_program.update', $program->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
@@ -16,7 +16,11 @@
             <label for="image">Upload New Image (Optional)</label>
             <input type="file" name="image" id="image" class="form-control">
             @if ($program->image)
-                <img src="{{ asset('storage/' . $program->image) }}" alt="Program Image" width="100">
+                <div class="image-preview">
+                    <img src="{{ asset('storage/' . $program->image) }}" alt="Program Image" width="100">
+                </div>
+            @else
+                <p>No image uploaded</p>
             @endif
         </div>
 
@@ -65,17 +69,20 @@
             <input type="text" id="success_prediction" name="success_prediction" value="{{ old('success_prediction', $program->success_prediction) }}" required>
         </div>
 
-        {{-- <div class="form-group">
+        <div class="form-group">
             <label for="details">Details:</label>
             <textarea id="details" name="details" rows="4" required>{{ old('details', $program->details) }}</textarea>
-        </div> --}}
+        </div>
 
+        {{-- Uncomment if you want status functionality
         <label for="status">Status:</label>
         <select id="status" name="status" required>
             <option value="Active" {{ $program->status == 'Active' ? 'selected' : '' }}>Active</option>
             <option value="Inactive" {{ $program->status == 'Inactive' ? 'selected' : '' }}>Inactive</option>
         </select>
-        <br><br>
+        --}}
+
+
 
         <button type="submit">Update</button>
     </form>

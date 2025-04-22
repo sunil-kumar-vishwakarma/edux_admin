@@ -1,12 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include DataTable CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+<!-- Include DataTable JS -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+
+
     <button class="btncreate" onclick="window.location.href='{{ route('discover_program.create') }}';">+ Create
         Program</button>
 
     <!-- Container for scrollable table -->
     <div class="table-container">
-        <table class="employer-table">
+        <table class="employer-table" id="customerTable">
             <thead>
                 <tr>
                     <th>S No.</th>
@@ -20,8 +31,8 @@
                     <th>Application Fee</th>
                     <th>Duration</th>
                     <th>Success Prediction</th>
-                    {{-- <th>Details</th> --}}
-                    <th>Status</th>
+                    <th>Details</th>
+                    {{-- <th>Status</th> --}}
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -30,26 +41,26 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>
-                            <img src="{{ asset('storage/' . $program->image) }}" alt="University Logo" width="50">
+                            <img src="{{ asset('storage/' . $program->image) }}?v={{ $program->updated_at->timestamp }}" alt="University Logo" width="50">
                         </td>
                         <td>{{ $program->university_name }}</td>
                         <td>{{ $program->certificate }}</td>
                         <td>{{ $program->college_name }}</td>
                         <td>{{ $program->location }}</td>
                         <td>{{ $program->campus_city }}</td>
-                        <td>${{ number_format($program->tuition) }} CAD</td>
-                        <td>${{ number_format($program->application_fee) }} CAD</td>
-                        <td>{{ $program->duration }}</td>
+                        <td>₹ {{ number_format($program->tuition) }}</td>
+                        <td>₹ {{ number_format($program->application_fee) }}</td>
+                        <td>{{ $program->duration }} Months</td>
                         <td>{{ $program->success_prediction }}</td>
-                        {{-- <td>{{ $program->details }}</td> --}}
-                        <td>
+                        <td>{{ $program->details }}</td>
+                        {{-- <td>
                             <button
                                 class="student-toggle-status btn {{ $program->status === 'Active' ? 'btn-success' : 'btn-danger' }}"
                                 data-id="{{ $program->id }}" data-status="{{ $program->status }}"
                                 onclick="toggleStatus({{ $program->id }}, '{{ $program->status }}')">
                                 {{ $program->status }}
                             </button>
-                        </td>
+                        </td> --}}
                         <td>
                             {{-- <button class="btnuser view-user-btn" onclick="openViewModal({{ $program->id }})">View</button> --}}
                             <a href="{{ route('discover_program.edit', $program->id) }}">
@@ -96,6 +107,20 @@
 @endsection
 
 @section('scripts')
+<script>
+    $(document).ready(function () {
+        $('#customerTable').DataTable({
+            paging: true,       // Enable pagination
+            ordering: true,     // Enable column sorting
+            info: false,        // Hide "Showing X of Y" info
+            searching: false,   // Hide search box
+            lengthChange: false // Hide "Show X entries" dropdown
+        });
+    });
+</script>
+
+
+
     <script>
         const APP_URL = "{{ url('') }}";
 

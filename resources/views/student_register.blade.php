@@ -1046,7 +1046,7 @@
                     </form>
 
                     <div id="login">
-                        <p>Already have an account? <a href="student_login.html"> Login</a></p>
+                        <p>Already have an account? <a href="/student-login"> Login</a></p>
                     </div>
                     <small>*If you are a minor in your jurisdiction, your parent or legal guardian must agree to the above
                         terms.</small><br>

@@ -37,9 +37,10 @@
 
         <li class="menu-item">
             <a href="{{ route('discover_program-list') }}" class="{{ request()->routeIs('discover_program-list') ? 'active' : '' }}">
-                <i class="fas fa-graduation-cap icon"></i>
-                 Program List</a>
+                <i class="	fas fa-book-open"></i>
+                Program List </a>
         </li>
+
 
         <li class="menu-item">
             <a href="{{ route('partners-list') }}" class="{{ request()->routeIs('partners-list') ? 'active' : '' }}">
@@ -51,6 +52,12 @@
             <a href="{{ route('enquiries-list') }}"
                 class="{{ request()->routeIs('enquiries-list') ? 'active' : '' }}">
                 <i class="fas fa-file-alt icon"></i>Enquiry List</a>
+
+        </li>
+        <li class="menu-item">
+            <a href="{{ route('pages.pages') }}"
+                class="{{ request()->routeIs('pages.pages') ? 'active' : '' }}">
+                <i class="fas fa-file-alt icon"></i>Pages</a>
 
         </li>
 
@@ -96,12 +103,12 @@
                 <i class="fas fa-bell icon"></i>
                 Notification</a>
         </li>
-            <li class="menu-item">
-                <a href="{{ route('settings.index') }}"
-                    class="{{ request()->routeIs('settings.index') ? 'active' : '' }}">
-                    <i class="fas fa-cogs icon"></i>
-                    Settings</a>
-            </li>
+        <li class="menu-item">
+            <a href="{{ route('settings.index') }}"
+                class="{{ request()->routeIs('settings.index') ? 'active' : '' }}">
+                <i class="fas fa-cogs icon"></i>
+                Settings</a>
+        </li>
 
     </ul>
 </aside>

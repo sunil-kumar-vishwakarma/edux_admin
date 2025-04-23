@@ -63,7 +63,7 @@
                             </button>
                         </td> --}}
                         <td>
-                            {{-- <button class="btnuser view-user-btn" onclick="openViewModal({{ $program->id }})">View</button> --}}
+                            <button class="btnuser view-user-btn" onclick="openViewModal({{ $program->id }})">View</button>
                             <a href="{{ route('discover_program.edit', $program->id) }}">
                                 <button class="btnuser edit-user-btn">Edit</button>
                             </a>
@@ -85,14 +85,14 @@
     </div>
 
     <!-- View Modal -->
-    {{-- <div id="userDetailsModal" class="modal" style="display: none;">
+    <div id="userDetailsModal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close-btn" onclick="closeViewModal()">&times;</span>
             <i class="fas fa-graduation-cap icon"></i>
             <h2>Discover Program Details</h2>
             <div id="userDetails"></div>
         </div>
-    </div> --}}
+    </div>
 
     <!-- Delete Confirmation Modal -->
     <div id="deleteModal" class="modal" style="display: none;">
@@ -113,7 +113,7 @@
             $('#customerTable').DataTable({
                 paging: true, // Enable pagination
                 ordering: true, // Enable column sorting
-                info: false, // Hide "Showing X of Y" info
+                info: true, // Hide "Showing X of Y" info
                 searching: false, // Hide search box
                 lengthChange: false // Hide "Show X entries" dropdown
             });
@@ -203,6 +203,10 @@
 @endsection
 
 <style>
+.modal-content{
+    margin: 5% auto !important;
+}
+
     .table-container {
         width: 100%;
         overflow-x: auto;

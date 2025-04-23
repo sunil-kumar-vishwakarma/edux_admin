@@ -1143,14 +1143,14 @@
                     <div class="registr">
                         <h3>Don’t have an account?</h3>
                         <br />
-                        <a href="student_register.html">Register as a Student</a><br /><br />
+                        <a href="/student-register">Register as a Student</a><br /><br />
                         <a href="partner_registration.html" class="a3">Register as a Recruitment Partner</a>
                     </div>
                     <br />
 
                     <div class="tc">
-                        <a href="privacy_policy.html">Privacy & Cookies Policy</a><br />
-                        <a href="Terms_and _condition.html">Terms & Conditions</a>
+                        <a href="/privacy/policy">Privacy & Cookies Policy</a><br />
+                        <a href="/term-and-condition">Terms & Conditions</a>
                     </div>
                 </div>
             </div>

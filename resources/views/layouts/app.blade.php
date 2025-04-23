@@ -21,6 +21,10 @@
     @yield('scripts')
     {{-- <script src="{{ asset('js/toggleStatus.js') }}"></script> --}}
     <script src="{{ asset('js/script.js') }}"></script>
-
+<style>
+    .main-content{
+        margin-left:265px ;
+    }
+</style>
 </body>
 </html>

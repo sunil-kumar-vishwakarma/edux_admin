@@ -23,6 +23,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SMSController;
 use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\PagesController;
 
 
 
@@ -79,6 +80,10 @@ Route::middleware(['auth'])->group(function () {
 
     // Dashboard Routes
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::get('/admin/pages', [PagesController::class, 'pages'])->name('pages.pages');
+    Route::get('/admin/pages/edit_privacy', [PagesController::class, 'edit_privacy'])->name('pages.edit_privacy');
+    Route::get('/admin/pages/edit_term', [PagesController::class, 'edit_term'])->name('pages.edit_term');
 
     // Show profile (viewing the profile)
     Route::get('/admin/profile/{id}', [ProfileController::class, 'show'])->name('profile.show');

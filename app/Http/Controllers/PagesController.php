@@ -7,15 +7,25 @@ use App\Models\Page;
 
 class PagesController extends Controller
 {
-    public function pages()
+    public function editPrivacy()
     {
-        // $notifications = Notification::all();
-        return view('pages.pages');
+        $page = Page::where('slug', 'privacy-policy')->firstOrFail();
+        return view('pages.edit_privacy', compact('page'));
     }
-    public function edit_privacy()
+
+    public function updatePrivacy(Request $request, $id)
     {
-        // $notifications = Notification::all();
-        return view('pages.edit_privacy');
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'content' => 'required|string',
+        ]);
+
+        $page = Page::findOrFail($id);
+        $page->title = $request->input('title');
+        $page->content = $request->input('content');
+        $page->save();
+
+        return redirect()->route('pages.edit_privacy')->with('success', 'Privacy Policy updated successfully!');
     }
 
     public function edit($id)
@@ -24,30 +34,8 @@ class PagesController extends Controller
         return view('pages.edit', compact('page'));
     }
 
-    public function update(Request $request, $id)
-    {
-        $request->validate([
-            'title' => 'required|string|max:255',
-            'content' => 'required|string',
-        ]);
-
-        $page = Page::findOrFail($id);
-        $page->title = $request->title;
-        $page->content = $request->content;
-        $page->save();
-
-        return redirect()->route('pages.pages')->with('success', 'Page updated successfully.');
-    }
-
-
-
-
     public function edit_term()
     {
-        // $notifications = Notification::all();
         return view('pages.edit_term');
     }
-
-
 }
-

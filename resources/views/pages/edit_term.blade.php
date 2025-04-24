@@ -3,8 +3,7 @@
 @section('content')
     <div class="settings-container">
         <header class="edit-student-header">
-            <h1>Edit Page</h1>
-            <a href="{{ route('pages.pages') }}" class="back-btn"><i class="fas fa-arrow-left"></i> Back</a>
+            <h1>Term and Condition</h1>
         </header>
         <br><br>
 

@@ -81,10 +81,8 @@ Route::middleware(['auth'])->group(function () {
     // Dashboard Routes
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    Route::get('/admin/pages/edit_privacy', [PagesController::class, 'editPrivacy'])->name('pages.edit_privacy');
-    Route::put('/admin/pages/update_privacy/{id}', [PagesController::class, 'updatePrivacy'])->name('pages.update_privacy');
-    Route::get('/admin/pages/{id}/edit', [PagesController::class, 'edit'])->name('pages.edit');
 
+    Route::get('/admin/pages/edit_privacy', [PagesController::class, 'edit_privacy'])->name('pages.edit_privacy');
     Route::get('/admin/pages/edit_term', [PagesController::class, 'edit_term'])->name('pages.edit_term');
 
     // Show profile (viewing the profile)

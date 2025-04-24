@@ -144,6 +144,14 @@ small {
     border-radius: 50%; /* Make the background circular */
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
+    margin-top:20px;
+}
+
+.social-icons i{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:10px 0px;
 }
 
 .social-icons a:hover {

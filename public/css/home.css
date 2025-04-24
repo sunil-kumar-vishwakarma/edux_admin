@@ -119,16 +119,18 @@ h2 {
   color: black;
 }
 
-
 .navbar-toggler {
-  border: none;
-  background-color: white;
-  padding: 0.5rem;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23000'%3E%3Cpath d='M0 7h30v3H0zm0 7h30v3H0zm0 7h30v3H0z'/%3E%3C/svg%3E");
-}
+    border: none; /* Add a border to make it visible */
+  
+    padding: 0.5rem; /* Add some padding */
+    color: #000; /* Ensure the icon is visible */
+  }
+  
+  /* Adjust the toggler icon */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23000'%3E%3Cpath d='M0 7h30v3H0zm0 7h30v3H0zm0 7h30v3H0z'/%3E%3C/svg%3E");
+  }
+  
 
 
 .hero {
@@ -1189,8 +1191,8 @@ video {
 
 .row {
     justify-content: center;
-    margin-left: -15px;
-    margin-right: 320px;
+    margin-left: -108px;
+    margin-right: 247px;
     margin-top: -80px;
 }
 
@@ -1209,7 +1211,7 @@ video {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 20px; /* Space below each card */
     transition: all 0.3s ease-in-out; /* Smooth transition on hover */
-    margin-top: -300px;
+    margin-top: -214px;
 }
 
 .card1 img {
@@ -1260,6 +1262,7 @@ video {
     text-align: left;
     margin-right: 150px;
     margin-bottom: 55px;
+    font-weight: bold;
 }
 
 .card1 button a {
@@ -1786,6 +1789,19 @@ video {
         gap: 10px;
     }
 
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background-color: transparent;
+    }
+
     .d-flex {
         justify-content: center;
         flex-direction: column;
@@ -2216,7 +2232,7 @@ video {
 
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* General body adjustments */
     body {
         font-size: 16px;
@@ -2373,11 +2389,13 @@ video {
     }
 
     .row {
-        margin-left: 200px;
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
-        /*justify-content: center;*/
-        /*padding: 0px;*/
+        /* margin-left: 200px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .box2 {
@@ -2418,9 +2436,13 @@ video {
     }
 
     div#card2 {
-        margin-left: -5px;
-
+        margin-left: -269px;
         flex-direction: column;
+        margin-top: -373px;
+    }
+
+    #card2 .col{
+        margin-bottom: -210px;
     }
 
     .card1 img {
@@ -2439,4 +2461,19 @@ video {
         margin: 20px auto;
     }
 
+
+
 }
+
+/* 
+.global img{
+    margin-left: 300px;
+  }
+  .global .score{
+    margin-left: -780px;
+    transform: translateY(-480px);
+    
+  }
+  .global .score h3{
+    color: #007bff;
+  } */

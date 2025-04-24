@@ -221,7 +221,7 @@
                   </p>
                 
                    <br>
-                    <a href="webinar-learnmore.html"><button class="btn1">Learn More About Us</button></a>
+                    <a href="webinar-learnmore.html"><button class="btn btn-primary">Learn More About Us</button></a>
                   </div>
                     <span class="imge">
                       <img src="images/img1.webp">
@@ -244,12 +244,12 @@
             <div class="card1">
               <div class="row row-cols-1 row-cols-md-3 g-4" id=card1>
                 <div class="col">
-                  <div class="card-event" style="margin-left: -120px;">
+                  <div class="card-event" style="margin-left:-41px">
                     <img src="images/Canada-Study-Permit-Processing-Times-Falling-q8awoecm53hn8hwocxuqxnf3deq9nnh2p9klnrj2dc.png" class="card-img-top" alt="...">
                     <div class="card-body">
                  <br><br>
                       <p class="card-text"><a  href="#">Why Choose Canada as an International Student</a></p><br>
-                      <h6>October 17, 2024</h6>
+                      <h6 style="margin-left: 30px;">October 17, 2024</h6>
                     </div>
                   <button><a href="webinar-readmore.html" >Read More</a></button>
                   </div>
@@ -260,7 +260,7 @@
                     <div class="card-body">
                       <br><br>
                       <p class="card-text" ><a  href="#" >The Early Impacts of Canada’s International Student Cap on Postgraduate Studies</a></p><br>
-                      <h6>October 17, 2024</h6>
+                      <h6 style="margin-left: 30px;">October 17, 2024</h6>
                     </div>
                     <button  id="colbutton"><a href="webinar-readmore.html">Read More</a></button>
                   </div>
@@ -271,7 +271,7 @@
                     <div class="card-body">
                       <br><br>
                       <p class="card-text"><a  href="#">Cost of Living in Ireland</a></p><br>
-                      <h6>October 17, 2024</h6>
+                      <h6 style="margin-left: 30px;">October 17, 2024</h6>
                     </div>
                     <button><a href="webinar-readmore.html">Read More</a></button>
                   </div>

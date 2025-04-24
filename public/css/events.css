@@ -458,8 +458,8 @@ margin-left: 42px;
   }
 
   #c3{
-    /* margin-left: 160px; */
-  }
+ margin-left: 41px;
+  }   
 
 .container{
    
@@ -494,7 +494,7 @@ margin-left: 42px;
 }
 
 .background p {
-    color: rgba(0, 0, 0, 0.614);
+    color: white;
     max-width: 700px;
     font-size: 20px;
     font-weight: 400;
@@ -631,7 +631,7 @@ margin-left: 42px;
 
 .why-edux{
   margin-top: 20px;
-  background-color: #5089e3;
+  background-color: #385889;
   width: 70%;
   padding:70px 120px ;
   margin-left: 15.7%;
@@ -657,6 +657,7 @@ margin-left: 42px;
 {
   font-size: 20px;
   max-width: 500px;
+  color: white; 
 }
 
 .imge img{
@@ -706,8 +707,8 @@ margin-left: 42px;
   
   .card1 {
   border-color: #fff;
-  margin-top: 450px;
- margin-left: 200px;
+  margin-left: 254px;
+  margin-right: -106px;
   }
 
 
@@ -1327,7 +1328,7 @@ margin-top: 50px;
   
     .content1 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 90px 10px;
     }
 
@@ -1338,7 +1339,9 @@ margin-top: 50px;
     }
 
     .background h1 {
-        font-size: 40px;
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
     }
 
     .carousel img {

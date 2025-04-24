@@ -2,10 +2,10 @@
 @section('title', 'EduX | Student')
 @section('content')
 <link rel="stylesheet" href="{{asset('css/events.css')}}">
-  <style>
-  
-  
-  
+  <style> 
+
+
+
 .navbar-brand div{
     font-size: 27px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,49 +25,56 @@
         align-items: center;
     }
 
-    .hrading h1{
-        font-size: 40px;
-        font-weight: bold;
-        max-width: 700px;
-        margin-left: 290px;
-        margin-bottom: 30px;
-    }
+  .hrading h1 {
+    font-size: 40px;
+    font-weight: bold;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
 
-    .hrading p{
-        font-size: 20px;
-        padding-left: 41%;
-        white-space: nowrap;
-        font-weight: 500;
-    }
+.hrading p {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    white-space: normal;
+    padding: 0;
+}
 
-    #blu{
-        font-weight: bold;
-        color: blue;
-        padding-left: 43%;
-        white-space: nowrap;
-    }
+#blu {
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    padding: 0;
+}
 
-    .img{
-        align-items: center;
-        margin-left: 150px;
-        height: 300px;
-        width: 700px;
-    }
 
-    .description{
-        max-width: 1000px;
-        text-align: justify;
-        margin-left: 150px;
-        line-height: 2;
-        font-size: 18px;
-    }
+  .img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.img img {
+    max-width: 100%;
+    width:545px;
+    height: auto;
+}
+
+
+  .description {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 18px;
+    text-align: justify;
+}
+
 
     .description ul li{
         list-style:disc;
     }
-
-
-
 
 /* For tablets and smaller desktops */
 @media (max-width: 992px) {
@@ -123,11 +130,15 @@
     text-align: justify;
   }
   
-  .card1-webinars{
-      display:flex;
-              flex-direction: column;
-        transform: translateX(-356px);
-  }
+ .card1-webinars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
   
   .blog{
             display: inline;
@@ -259,15 +270,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     text-align: left;
-    margin-right: 150px;
-    margin-bottom: 55px;
+      display: block;
+    margin: 20px auto 0 auto;
 }
   </style>
 
         <div class="hrading">
-            <p id="blu">Edu-X</p><br>
             <h1>These Are the Trends That Shaped International Education in 2024</h1>
-             <p>December 19, 2024</p>
 
         </div><br>
 

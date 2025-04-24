@@ -69,18 +69,17 @@ header h1 {
 /* Main Content Styles */
 
 
-h2 {
-    color: #004a8f;
+.main-fre h2,.main-fre h3 {
+       color: #004a8f;
     margin-top: 20px;
+    font-size: 20px;
+    font-weight:bold;
+
 }
 
-h3 {
-    color: #004a8f;
-    margin-top: 15px;
-}
-
-p {
+.main-fre  p {
     margin: 10px 0;
+    max-width:100%;
 }
 
 /* FAQ Section Styles */
@@ -94,9 +93,13 @@ p {
 
 
 .main-fre {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+       padding: 20px;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 </style>
 
@@ -111,16 +114,31 @@ p {
   
         <section id="fees" class="contents main-fre" style="line-height: 1.6;">
             <h2 style="color: #004a8f;margin-top: 20px;">Understanding Edu-X Fees</h2>
-            <p>Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.</p>
+            <p>Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.</p>
+
+
 
             <h3 style="color: #004a8f;margin-top: 20px;">Application Fees</h3>
-            <p>Application fees are charged per program applied to. These fees cover the cost of processing your application and vary depending on the institution.</p>
+            <p>Application fees are charged per program applied to. These fees cover the cost of processing your application and vary depending on the institution.
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.
+             Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.</p>
+           
 
             <h3 style="color: #004a8f;margin-top: 20px;">Service Fees</h3>
-            <p>Service fees are charged for the support and services provided by Edu-X, including application assistance, visa guidance, and more.</p>
+            <p>Service fees are charged for the support and services provided by Edu-X, including application assistance, visa guidance, and more.
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.
+            
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.</p>
+
 
             <h3 style="color: #004a8f;margin-top: 20px;">Tuition Deposits</h3>
-            <p>Once accepted, you may be required to pay a tuition deposit to secure your spot. This deposit is typically applied toward your first semester's tuition.</p>
+            <p>Once accepted, you may be required to pay a tuition deposit to secure your spot. This deposit is typically applied toward your first semester's tuition.
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.
+            Edu-X charges various fees to facilitate the application process for students. Below is a breakdown of the fees you may encounter.</p>
 
             <h3 style="color: #004a8f;margin-top: 20px;">Refund Policy</h3>
             <p>Refund policies vary by institution. Please review the specific refund policy for your chosen program before making any payments.</p>

@@ -705,13 +705,13 @@
 
 
 .advertise-section {
-    margin-top:100px;
+      margin-top:100px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       background-color: #0b3268;
       color: #fff;
-      padding: 40px;
+      padding: 20px;
       width: 100%;
       max-width: 1520px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -733,29 +733,19 @@
       color: #d1d1d1; 
     }
 
-    .advertise-image {
-      max-width: 45%;
-    }
-
     .advertise-image img {
-      width: 100%;
-      height: 180px;
-      border-radius: 4px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      width: 350px;
+      height: auto;
     }
 
 
 .study-programs {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 20px; /* Adjust gap as necessary */
-  padding: 20px;
-  width: 100%;
-  max-width: 1500px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  margin-bottom: 20px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .video1 {
@@ -822,7 +812,7 @@
     text-decoration: none;
 }
 
-.program .btn-primary {
+ .btn-primary {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -831,16 +821,18 @@
   cursor: pointer;
   font-size: 1em;
   margin-top: 10px;
-  width: 100%;
+
 }
 
-.program .btn-primary:hover {
+ .btn-primary:hover {
   background-color: #0056b3;
 }
 
  .details {
-  border: 1px solid black;
+    border: 1px solid #b3aeae;
   padding: 20px;
+      border-radius: 4px;
+          margin-bottom: 20px;
 }
 
 .name-container {
@@ -1210,7 +1202,7 @@ body {
   align-items: center;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+  margin-bottom:310px;
   margin-top: 40px;
 }
 
@@ -1219,18 +1211,17 @@ body {
   font-size: 30px;
 }
 
+.gmap{
+ display:flex;
+ justify-content:space-evenly;
+ align-items:center;
+}
 
-.global img{
-  margin-left: 300px;
-}
-.global .score{
-  margin-left: -780px;
-  transform: translateY(-480px);
-  
-}
-.global .score h3{
-  color: #007bff;
-}
+ .global .score h3{
+    color: #007bff;
+    font-size:30px;
+    font-weight:bold;
+  } 
 
 .recruit h1{
   justify-content: left;
@@ -1254,27 +1245,35 @@ body {
   width: 160px;
 }
 
-.help-logo .hlogo{
-  display: inline-block;
-  margin-left: 180px;
-  margin-right: 20px;
-  justify-content: center;
 
+.help-logo{
+ display:flex;
+ gap:250px;
+ justify-content:center;
+}
+
+.help-logo .hlogo{
+     display: flex;
+    flex-direction: column;
 }
 
 .help{
   margin-top: -240px;
   margin-bottom: 100px;
-  margin-left: 50px;
+  padding:40px;
 }
 
 .help-logo .hlogo img{
   margin-left: 10px;
+  width:70px;
+  height:auto;
 }
 
 .help-logo h3{
-  color: #007bff;
-  font-weight: bold;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 
 .help-logo small{
@@ -1285,11 +1284,10 @@ body {
 }
 
 .buttons {
-  display: flex;
-  /* justify-content: space-around; */
-  margin-bottom: 20px;
-  gap: 20px;
-  margin-left: 290px;
+     display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
 }
 
 .buttons button{
@@ -1437,10 +1435,6 @@ body {
     max-width: 90%;
   }
 
-  .study-programs {
-    flex-direction: column;
-    gap: 10px;
-  }
 
   .video1,
   .form {
@@ -1747,6 +1741,12 @@ body {
     font-size: 22px;
   }
 
+   .video2{
+  display:flex;
+  gap:80px;
+  justify-content:center;
+  }
+
   .programs {
     margin-top: 20px;
   }
@@ -1770,9 +1770,39 @@ body {
 }
 
 .get-in-touch{
-  font-size: 38px;
+font-size: 32px;
+    max-width: 500px;
 }
-        
+
+.partnerdesc{
+width:100%;
+line-height:2;
+text-align:justify;
+}
+
+.partnerdesc p{
+font-size:18px;
+}
+
+.partnerdesc ul{
+text-align:justify;
+}
+
+.partnerdesc ul li{
+font-size:18px;
+list-style-type:disc;
+}
+
+.partnerdesc h1{
+font-size:28px;
+font-weight:bold;
+    }   
+
+
+    .partcont {
+    display:flex;
+    justify-content:space-around;
+    padding:0px 30px;
 </style>
 
   
@@ -1797,25 +1827,26 @@ body {
         <p>Generate student leads, applications, and enrollments with Keystone's global network of student websites.</p>
       </div>
       <div class="advertise-image">
-        <img src="{{asset('images/laptop.webp')}}" alt="Laptop screen">
+        <img src="{{asset('images/laptop.png')}}" alt="Laptop screen">
       </div>
     </section>
 
     <section class="study-programs">
       <div class="video1">
-        <video  height="250px" width="100%" controls>
+        <video  controls>
           <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
         </video>
+        
       </div>
       <div class="form">
         <h1 class="get-in-touch">Are you a student?</h1>
-        <button class="btn btn-primary"><a href="{{route('explr_school_Programs')}}" style="color: white; text-decoration: none; font-size: 20px;">Search for study programs here</a></button>
+        <button class="btn btn-primary" style="width:300px; font-weight:bold; margin-bottom:-20px"><a href="{{route('explr_school_Programs')}}">Search for study programs here   <i class="fa-solid fa-chevron-right" style="font-size:14px;"></i></a></button>
         <h1 class="get-in-touch" style="margin-top: 20px;">Get in touch to promote your programs here:</h1>
       </div>
-    </section>
+    </section>  
     
-    <section class="study-programs">
-      <div class="video1">
+    <section class="partcont">
+     <div class="partnerdesc">
         <h1>Be visible where students are searching</h1>
         <p>Keystone’s <b>500+ student websites</b> allow your institutions and programs to be discovered where students are searching online.</p>
         
@@ -1828,8 +1859,8 @@ body {
           <li>Learn from real-life examples of how we have helped similar institutions succeed</li>
         </ul>
         <p>Whether you wish to promote a single program, faculty, small college, or even an entire university system, we have a solution designed to help you. Fill out this form, and we’ll be in touch soon.</p>
-      </div>
-      
+
+           </div>
      
    <div class="form">
         <div class="details">
@@ -2108,12 +2139,23 @@ body {
 
   <section class="global">
     <h1>Global Presence for Global Recruitment</h1>
-  <img src="images/Map.webp" height="500px" width="700px">
-  <div class="score">
-    <p><h3><b>1,000+</b></h3>Globally</p><br>
-  <p><h3><b>200+</b> </h3>South Asia</p><br>
-  <p><h3><b>25+ </b></h3>South and East Asia,<br>African and Letin<br>America</p>
+
+    <div class="gmap">
+
+<div class="score">
+    <p><h3 style="font-size:30px;">1,000+</h3>Globally</p><br>
+  <p><h3>200+ </h3>South Asia</p><br>
+  <p><h3>25+ </h3>South and East Asia,<br>African and Letin<br>America</p>
 </div>
+
+     <div>
+
+  <img src="images/Map.webp" height="500px" width="700px">
+  </div> 
+
+  
+
+</div>  
   </section>
 
 
@@ -2122,7 +2164,7 @@ body {
 <!-- <button class="btn btn-primary"><a href="partner_registration.html">Partner With US</a></button> -->
 
 <!-- Button to Open Modal -->
-<button class="btn btn-primary" onclick="openModal()">Partner With Us</button>
+<button class="btn btn-primary" style ="font-weight:bold;" onclick="openModal()">Partner With Us</button>
 
 <!-- Custom Modal -->
 

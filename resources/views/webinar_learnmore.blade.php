@@ -30,7 +30,7 @@
             /* Removes default margin */
             padding: 0;
             /* Removes default padding */
-            margin-left: -120px;
+
         }
 
         .background-content h1 {
@@ -1019,5 +1019,194 @@
             });
         });
     </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".tab-button2");
+    const videoElement = document.getElementById("video-player2");
+    const videoSource = document.getElementById("video-source2");
+
+    // Define video paths for each tab
+    const videoSets = {
+        "students-video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "recruitment-partners-video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+    };
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Remove active class from all buttons
+            buttons.forEach((btn) => btn.classList.remove("active2"));
+
+            // Add active class to the clicked button
+            button.classList.add("active2");
+     
+            // Update video source based on the clicked button
+            const target = button.getAttribute("data-target");
+            videoSource.src = videoSets[target];
+
+            // Load and play the new video
+            videoElement.load();
+            // videoElement.play();
+        });
+    });
+
+    // Trigger click on the default active button to load its video
+    document.querySelector(".tab-button2.active2").click();
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".tab-button");
+  const videoElement = document.getElementById("video-player");
+  const videoSource = document.getElementById("video-source");
+
+  // Define video paths for each tab
+  const videoSets = {
+    "students-video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "recruitment-partners-video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "partner-institutions-video": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+  };
+
+  // Set the active button class on page load
+  const defaultActiveButton = document.querySelector(".tab-button.active1");
+  const defaultTarget = defaultActiveButton.getAttribute("data-target");
+  const defaultVideo = videoSets[defaultTarget];
+  videoSource.src = defaultVideo;
+  videoElement.load();
+  // videoElement.play();
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      buttons.forEach((btn) => btn.classList.remove("active1"));
+
+      // Add active class to the clicked button
+      button.classList.add("active1");
+
+      // Update video source based on the clicked button
+      const target = button.getAttribute("data-target");
+      videoSource.src = videoSets[target];
+
+      // Load and play the new video
+      videoElement.load();
+     // videoElement.play();
+    });
+  });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+  const heroImages = document.querySelector(".hero-images");
+  
+  // Define image sets for each tab
+  const imageSets = {
+    students: [
+      "images/student.jpg",
+      "images/partner_img.webp",
+      "images/institutions.jpg"
+    ],
+    "recruitment-partners": [
+      "images/partner_img.webp",
+      "images/institutions.jpg",
+      "images/student.jpg"
+    ],
+    "partner-institutions": [
+      "images/institutions.jpg",
+      "images/student.jpg",
+      "images/partner_img.webp"
+    ],
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      buttons.forEach((btn) => btn.classList.remove("active"));
+
+      // Add active class to the clicked button
+      button.classList.add("active");
+
+      // Hide all tab contents
+      tabContents.forEach((content) => (content.style.display = "none"));
+
+      // Show the content corresponding to the clicked button
+      const target = button.getAttribute("data-target");
+      document.getElementById(target).style.display = "block";
+
+      // Update images for the active tab
+      const images = imageSets[target];
+      heroImages.innerHTML = ""; // Clear current images
+      images.forEach((src, index) => {
+        const imageCard = document.createElement("div");
+        imageCard.className = `image-card`;
+        imageCard.style.zIndex = 3 - index; // Adjust stacking
+        imageCard.style.transform = `translateX(${(index - 1) * 50}%) translateY(${index * 20}px)`; // Adjust positions
+        imageCard.innerHTML = `<img src="${src}" alt="Image ${index + 1}">`;
+        heroImages.appendChild(imageCard);
+      });
+    });
+  });
+
+  // Trigger click on the default active button to load its images
+  document.querySelector(".tab-btn.active").click();
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all the buttons and content sections
+  const buttons = document.querySelectorAll('.tab-button');
+  const sections = document.querySelectorAll('.content');
+
+  // Add event listener to each button
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      // Get the target section ID
+      const target = this.getAttribute('data-target');
+      
+      // Hide all content sections
+      sections.forEach(section => {
+        section.classList.remove('active-content');
+      });
+
+      // Show the content section corresponding to the button clicked
+      const activeSection = document.getElementById(target);
+      activeSection.classList.add('active-content');
+    });
+  });
+});
+
+
+    const dropdownBtn = document.getElementById('dropdownBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // Show dropdown when hovering on the button
+        dropdownBtn.addEventListener('mouseenter', () => {
+            dropdownMenu.style.display = 'block';
+        });
+
+        // Show dropdown when hovering over the menu
+        dropdownMenu.addEventListener('mouseenter', () => {
+            dropdownMenu.style.display = 'block';
+        });
+
+        // Hide dropdown when the mouse leaves the button or the menu
+        dropdownBtn.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                if (!dropdownMenu.matches(':hover')) {
+                    dropdownMenu.style.display = 'none';
+                }
+            }, 200); // Optional delay for smoother UX
+        });
+
+        dropdownMenu.addEventListener('mouseleave', () => {
+            dropdownMenu.style.display = 'none';
+        });
+
+</script>
 
     

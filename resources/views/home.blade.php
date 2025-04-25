@@ -83,12 +83,12 @@
 
 
 <div class="video1" style="margin-top:10px;">
-        <video controls>
-          <source src="{{asset('images/how we help.mp4')}}" type="video/mp4">
-          
-        Your browser does not support the video tag.
-        </video>
-  </div>
+  <video controls style="width: 50%;"> <!-- or any fixed width like 600px -->
+    <source src="{{ asset('images/how we help.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
 
 <div class="btn1">
@@ -202,8 +202,6 @@
       </div>
     </div>
   <br><br>
-
-
 
 <div class="leff">
   <div class="d-grid gap-2">

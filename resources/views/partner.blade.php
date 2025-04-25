@@ -961,6 +961,7 @@
   gap: 20px;
   max-width: 700px;
   width: 100%;
+
 }
 
 .card-container .card-partner {
@@ -971,6 +972,10 @@
   text-align: center;
   width: 300px;
   margin-left: 250px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-container .icon img {
@@ -1288,11 +1293,13 @@ body {
     justify-content: center;
     margin-bottom: 20px;
     gap: 20px;
+    align-items:center;
 }
 
 .buttons button{
   border-radius: 20px;
   border: none;
+  font-weight:500;
 }
 
 .buttons button:hover{
@@ -1328,16 +1335,18 @@ body {
 }
 
 .content-partner .images img {
-  margin: 30px;
-  width: 200px;
-  height: 100px;
+ margin: 30px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #a39999;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .content-partner{
-  margin: 40px;
-  justify-content:space-evenly ;
-
- 
+     margin: 40px;
+    display: flex;
+    justify-content: center;
 }
  </style>
 

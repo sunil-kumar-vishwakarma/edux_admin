@@ -100,6 +100,7 @@
             color: white;
         }
 
+
         /* Flex container for image and card */
         .content {
             display: flex;
@@ -129,7 +130,7 @@
             padding: 20px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             margin-right: 190px;
-            margin-top: -45%;
+            margin-top: -55%;
 
         }
 
@@ -1053,8 +1054,7 @@
 
                     <div class="register">
                         <a href="partner_registration.html">Register as a Recruitment Partner</a><br><br>
-                        <a href="Institutions.html">Register as a Partner School</a>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>

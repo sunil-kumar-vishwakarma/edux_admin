@@ -4,10 +4,7 @@
 
 
     <style>
-        /* Global Styles */
-
-
-
+    
         .navbar-brand {
             display: flex;
             gap: 15px;
@@ -523,17 +520,10 @@
             background-color: #0056b3;
         }
 
-        /* Dropdowns next to the search bar */
-        .dropdowns {
-            display: flex;
-            gap: 10px;
-            /* Space between the dropdowns */
-            flex: 1;
-            /* Allow the dropdowns to take up remaining space */
-        }
+       
 
         /* Individual dropdown styling */
-        .dropdown {
+       .searchdropdowns . {
             padding: 13.5px 12px;
             background-color: rgb(246, 248, 254);
             border-radius: 5px;
@@ -1018,7 +1008,7 @@
                 margin-bottom: 15px;
             }
 
-            .dropdowns {
+            .searchdropdowns {
                 flex-wrap: wrap;
                 gap: 15px;
             }
@@ -1122,13 +1112,13 @@
                 margin-left: 5px;
             }
 
-            .dropdowns {
+            .searchdropdowns {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
             }
 
-            .dropdown {
+             .unique-dropdown {
                 font-size: 12px;
                 padding: 8px;
                 width: 100%;
@@ -1183,6 +1173,38 @@
                 grid-template-columns: 1fr;
             }
         }
+
+
+        .unique-dropdown {
+    padding: 13.5px 12px;
+    background-color: rgb(246, 248, 254);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    display: block; /* Ensures the dropdown is visible */
+    width: 100%; /* Full width */
+}
+
+/* Additional styles to ensure visibility */
+.searchdropdowns {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    align-items: center;
+}
+
+.unique-dropdown:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
     </style>
     <br><br><br><br><br>
 
@@ -1225,19 +1247,20 @@
             </div>
         </div>
 
-        <div class="dropdowns">
-            <select class="dropdown">
-                <option>Destination</option>
-                <option>USA</option>
-                <option>UK</option>
-                <option>Canada</option>
-            </select>
-            <select class="dropdown">
-                <option>Institute (School)</option>
-                <option>Harvard</option>
-                <option>MIT</option>
-                <option>Stanford</option>
-            </select>
+        <div class="searchdropdowns">
+    <select class="unique-dropdown destination">
+        <option>Destination</option>
+        <option>USA</option>
+        <option>UK</option>
+        <option>Canada</option>
+    </select>
+    <select class="unique-dropdown institute">
+        <option>Institute (School)</option>
+        <option>Harvard</option>
+        <option>MIT</option>
+        <option>Stanford</option>
+    </select>
+</div>
         </div>
     </div>
     </div>

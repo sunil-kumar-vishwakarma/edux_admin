@@ -720,6 +720,7 @@
             border-radius: 20px;
             border: none;
             font-size: 15px;
+                font-weight: 500;
 
         }
 
@@ -756,9 +757,12 @@
         }
 
         .content-institution .images img {
-            margin: 30px;
-            width: 200px;
-            height: 100px;
+             margin: 30px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #a39999;
+    border-radius: 10px;
+    padding: 20px;
         }
 
         .content-institution {
@@ -2205,12 +2209,13 @@
     <section class="success-Story">
         <h1>Success Stories From Our Partners</h1>
 
-        <div class="video2">
-            <video controls>
-                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-            </video>
 
-        </div>
+        <div class="video1" style="margin-top:10px;">
+  <video controls style="width: 50%; margin:0px 370px" > <!-- or any fixed width like 600px -->
+    <source src="{{ asset('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 
         <div class="container1">

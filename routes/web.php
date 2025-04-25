@@ -81,7 +81,7 @@ Route::middleware(['auth'])->group(function () {
     // Dashboard Routes
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    Route::get('/admin/pages', [PagesController::class, 'pages'])->name('pages.pages');
+
     Route::get('/admin/pages/edit_privacy', [PagesController::class, 'edit_privacy'])->name('pages.edit_privacy');
     Route::get('/admin/pages/edit_term', [PagesController::class, 'edit_term'])->name('pages.edit_term');
 
@@ -205,9 +205,6 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/subscriptions/{id}', [SubscriptionController::class, 'destroy'])->name('subscription.destroy');
     // In your routes/web.php, add a route to handle status updates
     Route::post('/update-status/subscription/{id}', [SubscriptionController::class, 'updateStatus'])->name('subscription.updateStatus');
-
-
-
 
 
     // Payment Routes

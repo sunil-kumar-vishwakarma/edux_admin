@@ -55,10 +55,17 @@
 
         </li>
         <li class="menu-item">
-            <a href="{{ route('pages.pages') }}"
-                class="{{ request()->routeIs('pages.pages') ? 'active' : '' }}">
-                <i class="fas fa-file-alt icon"></i>Pages</a>
+            <a href="{{ route('pages.edit_privacy') }}"
+                class="{{ request()->routeIs('pages.edit_privacy') ? 'active' : '' }}">
+                <i class="fas fa-file-alt icon"></i>Privacy Policy
+            </a>
+        </li>
 
+
+        <li class="menu-item">
+            <a href="{{ route('pages.edit_term') }}"
+                class="{{ request()->routeIs('pages.edit_term') ? 'active' : '' }}">
+                <i class="fas fa-file-alt icon"></i>Term and condition</a>
         </li>
 
         {{-- <li class="menu-item dropdown">

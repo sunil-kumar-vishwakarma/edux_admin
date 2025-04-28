@@ -1546,6 +1546,11 @@
                 padding: 20px;
             }
 
+            .gmap img{
+
+            display:none;
+            }
+
             /* Benefits Section */
             .benefits-section {
                 padding: 20px;
@@ -1679,8 +1684,10 @@
 
             /* Application Section */
             .application img {
-                width: 100%;
-                height: auto;
+               width: 100%;
+              height: auto;
+              display: flex;
+               margin: auto;
             }
 
             .application h1 {
@@ -1737,10 +1744,14 @@
             }
 
             .global .score {
-                margin-left: 0;
-
-                margin-top: 550px;
-                justify-content: center;
+                      display: flex;
+        flex-direction: column;
+        margin-left: 57px;
+        gap: -13px;
+        /* margin-top: 550px; */
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -135px;
 
             }
 
@@ -1794,6 +1805,11 @@
 
             .form-group {
                 width: 246px;
+            }
+
+            .contactForm{
+                 padding: 20px;
+    width: 100%;
             }
 
 
@@ -1997,6 +2013,8 @@
                 .d-flex {
                     gap: 15px;
                 }
+
+             
             }
 
             @media (max-width: 767px) {

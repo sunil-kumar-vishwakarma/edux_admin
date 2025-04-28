@@ -94,7 +94,9 @@
             margin-bottom: 10px;
         }
 
-        button {
+    
+
+      .registrationForm  button {
             width: 100%;
             padding: 10px;
             background-color: #007bff;
@@ -105,7 +107,7 @@
             cursor: pointer;
         }
 
-        button:hover {
+      .registrationForm  button:hover {
             background-color: #0056b3;
         }
 
@@ -193,23 +195,14 @@
 
 /* For mobile devices */
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px 0;
-    }
+      .support{
+            margin-top: -31px;
+        }
 
-    .navbar-toggler:hover {
-    text-decoration: none;
-    width: auto;
-}
+         .logo{
+             margin-top: 9px;
+         }
 
-.container-fluid{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
     .supp {
         flex-direction: column;
         align-items: center;
@@ -271,13 +264,7 @@
 
 
 <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+       
 
         /* Header Styling */
         .header {

@@ -76,6 +76,10 @@
         list-style:disc;
     }
 
+    #card1{
+        display: flex;
+    }
+
 /* For tablets and smaller desktops */
 @media (max-width: 992px) {
   .hrading {
@@ -138,6 +142,26 @@
     margin: 40px auto;
     max-width: 1200px;
 }
+
+
+#card1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        margin-left: 44px;
+}
+
+#c1{
+margin-left:156px;
+margin-top:40px;
+}
+
+#c2{
+margin-left:156px;
+}
+
 
   
   .blog{
@@ -363,7 +387,7 @@
           </div> -->
 
           <div class="card1-webinars">
-            <div class="row-cols-1 row-cols-md-3 g-4" id="card1" style="display: flex;">
+            <div class="row-cols-1 row-cols-md-3 g-4" id="card1">
               <div class="col">
                 <div class="card-webinar-learn webinar-readmore1">
                   <img src="{{asset('images/Canada-Study-Permit-Processing-Times-Falling-q8awoecm53hn8hwocxuqxnf3deq9nnh2p9klnrj2dc.png')}}" class="card-img-top1" alt="...">

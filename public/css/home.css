@@ -621,6 +621,29 @@ body {
     margin-left: 350px;
 }
 
+#card-col{
+    display: flex;
+    gap: -4px;
+    padding: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#card-col .video-text {
+    text-align: justify;
+    margin-top: 20px;
+  }
+  #card-col  video {
+    width: 500px;
+    height: auto;
+    border-radius: 8px; /* optional: to make video corners rounded */
+  }
+
+  #card-col .col p{
+      margin-top: 20px;
+  }
+
 .headin h2 {
     margin-top: 50px;
 }
@@ -1316,6 +1339,15 @@ video {
     div#webcrumbs {
         display: none;
     }
+
+    #card-col .col p{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        max-width: 100%;
+        font-weight: normal;
+        padding: 13px;
+    }
 }
 
 #card2 {
@@ -1850,8 +1882,9 @@ video {
         width: 100%;
     }
 
+
     .navbar-brand img {
-        width: 80px; /* Adjust logo size */
+        width: 57px; /* Adjust logo size */
         height: auto;
     }
 

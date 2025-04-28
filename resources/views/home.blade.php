@@ -239,53 +239,26 @@
   </div>
 
   </div>
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="colum">
-      <div class="card">
-        
-        <div class="card-bdy">
-          <div class="video1">
-            <div class="card mb-3">
-              
-              <div class="card-body">
-                <video controls>
-                  <source src="{{asset('images/how we help.mp4')}}" type="video/mp4">
-                  
-                Your browser does not support the video tag.
-                </video>
-              </div>
-<p class="card-txt" style="text-align: justify;">
-    edux believes that education should be accessible to all. We delivered 1,000 backpacks and school supplies to empower children in India to dream big and work hard to achieve their dreams.
-</p>
-        </div>
-          </div>
-        </div>
-       
-      </div>
-    </div>
-  
-    <div class="colum" id="vid2">
-      <div class="card">
-        <div class="card-bdy">
-          <div class="video1">
-            <div class="card mb-3">
-              
-              <div class="card-body">
-                <video controls>
-                  <source src="{{asset('images/how we help.mp4')}}" type="video/mp4">
-                  
-                Your browser does not support the video tag.
-                </video>
-              </div>
-<p class="card-txt" style="text-align: justify;">
-    edux believes that education should be accessible to all. We delivered 1,000 backpacks and school supplies to empower children in India to dream big and work hard to achieve their dreams.
-</p>
-        </div>
-    </div>
+ <div class="row row-cols-1 row-cols-md-2 g-4" id="card-col">
+  <div class="col">
+    <video controls>
+      <source src="{{ asset('images/how we help.mp4') }}" type="video/mp4">
+    </video>
+    <p style="text-align: justify;">
+      edux believes that education should be accessible to all. We delivered 1,000 backpacks and school supplies to empower children in India to dream big and work hard to achieve their dreams.
+    </p>
   </div>
+
+  <div class="col">
+    <video controls>
+      <source src="{{ asset('images/how we help.mp4') }}" type="video/mp4">
+    </video>
+    <p style="text-align: justify;">
+      edux believes that education should be accessible to all. We delivered 1,000 backpacks and school supplies to empower children in India to dream big and work hard to achieve their dreams.
+    </p>
   </div>
-  </div>
-  </div><br>
+</div>
+<br>
   <a href="events.html" id="story"><button type="button" id="btnn" class="btn btn-primary">Our Story</button></a>
    <div class="content2">
     <div class="headin">

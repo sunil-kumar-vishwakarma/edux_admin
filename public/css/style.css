@@ -153,12 +153,12 @@
   }
 
   /* Active menu item */
-  .sidebar-menu .menu-item .active {
+  /* .sidebar-menu .menu-item .active { */
       /* background-color: #e74c3c; */
       /* background-color: yellowgreen;
-    color: #ffffff; */
+    color: #ffffff; 
   }
-
+*/
   /* Active link text and icon */
   .sidebar-menu .menu-item .active {
       font-weight: bold;

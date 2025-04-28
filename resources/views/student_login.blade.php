@@ -9,102 +9,12 @@
                   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> -->
 
     <style>
-        .navbar-brand {
-            display: flex;
-            gap: 15px;
-        }
-
-
-        .navbar-brand img {
-            height: 70px !important;
-            width: auto;
-            margin-left: 17.5px;
-
-        }
-
-
-        .navbar-brand div {
-            font-size: 27px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
-            font-weight: bold;
-            margin-top: 17px;
-        }
-
-        .login-signup a {
-            background-color: blue;
-            color: white;
-            font-weight: 550;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            border: 1px solid white;
-        }
-
-        .login-signup a:hover {
-            background-color: white;
-            color: black;
-        }
+       
 
 
 
+      
 
-        .navbar {
-            padding: 5px 0;
-            width: 100%;
-            height: 100px;
-            background-color: #1652b4;
-        }
-
-        .navbar-nav .nav-link {
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 5px 15px;
-            position: relative;
-        }
-
-        .btn-group a .btn {
-            border: 1px solid white;
-            font-weight: bold;
-        }
-
-        .btn-group a .btn-outline-primary {
-            color: blue;
-
-        }
-
-        .btn-group a .btn:hover {
-            background-color: white;
-            color: black;
-        }
-
-        .navbar-nav .nav-item {
-            font-weight: bold;
-            font-size: 17px;
-            margin-left: 13px;
-        }
-
-        .navbar-nav .nav-link:hover::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -8px;
-            height: 2px;
-            background-color: white;
-            border-radius: 1px;
-        }
-
-
-
-        .btn-group {
-            margin-left: 10px;
-            color: white;
-        }
-
-        .btn-group a button {
-            margin-left: 10px;
-            color: white;
-        }
 
         .footer {
             background-color: #1652b4;
@@ -374,78 +284,12 @@
         }
 
 
-        .navbar-toggler {
-            border: 2px solid transparent;
-            /* Default border transparent */
-            padding: 8px;
-            outline: none;
-        }
-
-        /* Style the three lines */
-        .navbar-toggler-icon {
-            background-image: none;
-            /* Remove Bootstrap default icon */
-            width: 30px;
-            height: 3px;
-            background-color: black;
-            display: block;
-            position: relative;
-        }
-
-        .navbar-toggler-icon::before,
-        .navbar-toggler-icon::after {
-            content: "";
-            width: 30px;
-            height: 3px;
-            background-color: black;
-            position: absolute;
-            left: 0;
-        }
-
-        .navbar-toggler-icon::before {
-            top: -8px;
-        }
-
-        .navbar-toggler-icon::after {
-            top: 8px;
-        }
-
-        /* Add black border when clicked */
-        .navbar-toggler:focus,
-        .navbar-toggler:active,
-        .navbar-toggler:hover {
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 17px;
-        }
-
-
-
-        .navbar-collapse {
-            -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-            -ms-flex-positive: 1;
-            flex-grow: 1;
-            -ms-flex-align: center;
-            align-items: center;
-            background-color: #1652b4;
-        }
-
+       
 
 
         @media (max-width: 576px) {
 
-            /* Navbar */
-            .navbar-nav {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .navbar-nav .nav-link {
-                padding: 10px;
-                font-size: 14px;
-                /* Adjust font size for smaller screens */
-            }
+          
 
             /* Remove background image on mobile */
             .imag {
@@ -551,27 +395,7 @@
                 /* Smaller height for tablets */
             }
 
-            /* Navbar */
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
-
-            .navbar-nav .nav-item {
-                font-size: 14px;
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            .navbar .nav-item .nav-link {
-                color: blue;
-                text-align: center;
-            }
-
-            .navbar .btn-group {
-                margin-left: 120px;
-            }
+           
 
             /* Footer */
             .footer {
@@ -610,29 +434,7 @@
         /* Adjust card and illustration for smaller screens */
         @media (max-width: 768px) {
 
-            /* Navbar */
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
-
-            .navbar-nav .nav-item {
-                font-size: 14px;
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            .navbar .nav-item .nav-link {
-                color: blue;
-                text-align: center;
-            }
-
-            .navbar .btn-group {
-                margin-left: 120px;
-            }
-
-
+         
 
             .illustration {
                 display: none;
@@ -661,18 +463,7 @@
 
         @media (max-width: 767px) {
 
-            /* Navbar */
-            .navbar-nav {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .navbar-nav .nav-link {
-                padding: 10px;
-                font-size: 15px;
-                /* Adjust font size for slightly bigger mobile screens */
-            }
-
+         
             /* Remove background image on mobile */
             .imag {
                 display: none;
@@ -770,40 +561,7 @@
         /* Footer Adjustments */
         @media (max-width: 768px) {
 
-            /* Increase height of navbar when expanded */
-            .navbar-collapse.collapse.show {
-
-                height: 350px;
-                /* Adjust the height automatically */
-                padding: -20px;
-                z-index: 1000;
-                border: none;
-
-            }
-
-
-            .navbar-collapse {
-                overflow: hidden;
-                /* Ensure content does not overflow */
-                transition: max-height 0.3s ease-in-out;
-                /* Smooth transition */
-                background-color: #1652b4;
-                /* Same color as navbar */
-                width: 100%;
-                background-color: #1652b4;
-            }
-
-            /* Navbar items on mobile */
-            .navbar-nav {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                background-color: #1652b4;
-                padding-top: 32px;
-                border: none;
-                gap: 14px;
-
-            }
+            
 
             .container-fluid {
                 text-align: center;
@@ -817,28 +575,7 @@
 
 
 
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
-
-            .navbar-nav .nav-item {
-                font-size: 14px;
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            .navbar .nav-item .nav-link {
-                color: blue;
-                text-align: center;
-            }
-
-            .navbar .btn-group {
-                margin-left: 120px;
-            }
-
-
+         
 
 
             .footer-row {
@@ -859,34 +596,7 @@
 
         /* Extra small devices (phones, <576px) */
         @media (max-width: 576px) {
-            .navbar img {
-                height: 40px;
-                width: auto;
-            }
-
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
-
-            .navbar-nav .nav-item {
-                font-size: 14px;
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            .navbar .nav-item .nav-link {
-                color: blue;
-                text-align: center;
-            }
-
-            .navbar .btn-group {
-                margin-left: 120px;
-            }
-
-
-
+            
 
             .card-login {
                 padding: 10px;
@@ -913,28 +623,7 @@
 
         @media (max-width: 768px) {
 
-            /* Navbar adjustments */
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
-
-            .navbar-nav .nav-item {
-                font-size: 14px;
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            .navbar .nav-item .nav-link {
-                color: white;
-                text-align: center;
-            }
-
-            .navbar .btn-group {
-                margin-left: 0;
-                margin-top: 10px;
-            }
+          
 
             /* Footer adjustments */
             .footer-row {
@@ -953,75 +642,15 @@
             }
         }
 
-        /* Mobile devices (max-width: 576px) */
-        /* Small screens (max-width: 576px) */
-        @media (max-width: 576px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px 0;
-            }
-
-            .navbar-toggler {
-                display: block;
-                /* Ensure toggle button is visible */
-
-                border: none;
-                /* Optional: remove border if needed */
-                background-color: transparent;
-                /* Optional: set background if not visible */
-            }
-
-
-            /* Ensure collapse menu adjusts properly */
-            .navbar-collapse {
-                text-align: center;
-                /* Center-align links */
-            }
-
-            .navbar-nav .nav-item {
-                margin-bottom: 10px;
-                /* Add spacing between items */
-            }
-
-            .navbar .btn-group {
-                margin-top: 10px;
-                /* Adjust button group position */
-            }
-        }
-
+ 
+           
 
 
 
         /* Tablet screens (768px - 1024px) */
         @media (min-width: 768px) and (max-width: 1024px) {
 
-            /* Navbar Fix - Full Width Background */
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-                padding: 15px 0;
-                width: 100%;
-                background-color: #1652b4;
-            }
-
-            /* Navbar Links - Column Layout */
-            .navbar-nav {
-                flex-direction: column;
-                display: flex;
-                align-items: center;
-                width: 100%;
-                gap: 10px;
-            }
-
-            .navbar-nav .nav-link {
-                font-size: 16px;
-                text-align: center;
-                width: 100%;
-                padding: 10px;
-                color: white;
-            }
-
+          
 
             .login-signup {
                 margin-left: 360px;

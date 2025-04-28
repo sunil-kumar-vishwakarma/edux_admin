@@ -3,102 +3,7 @@
 @section('content')
 
     <style>
-        .navbar-brand {
-            display: flex;
-            gap: 15px;
-        }
-
-
-        .navbar-brand img {
-            height: 70px !important;
-            width: auto;
-            margin-left: 17.5px;
-
-        }
-
-
-        .navbar-brand div {
-            font-size: 27px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
-            font-weight: bold;
-            margin-top: 17px;
-        }
-
-        .login-signup a {
-            background-color: blue;
-            color: white;
-            font-weight: 550;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            border: 1px solid white;
-        }
-
-        .login-signup a:hover {
-            background-color: white;
-            color: black;
-        }
-
-
-
-
-        .navbar {
-            padding: 5px 0;
-            width: 100%;
-            height: 100px;
-            background-color: #1652b4;
-        }
-
-        .navbar-nav .nav-link {
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 5px 15px;
-            position: relative;
-        }
-
-        .btn-group a .btn {
-            border: 1px solid white;
-            font-weight: bold;
-        }
-
-        .btn-group a .btn-outline-primary {
-            color: blue;
-
-        }
-
-        .btn-group a .btn:hover {
-            background-color: white;
-            color: black;
-        }
-
-        .navbar-nav .nav-item {
-            font-weight: bold;
-            font-size: 17px;
-            margin-left: 13px;
-        }
-
-        .navbar-nav .nav-link:hover::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -8px;
-            height: 2px;
-            background-color: white;
-            border-radius: 1px;
-        }
-
-
-
-        .btn-group {
-            margin-left: 10px;
-            color: white;
-        }
-
-        .btn-group a button {
-            margin-left: 10px;
-            color: white;
-        }
+       
 
 
         /* Flex container for image and card */
@@ -428,18 +333,7 @@
         /* Mobile First Approach for screens up to 576px */
         @media (max-width: 576px) {
 
-            /* Navbar */
-            .navbar-nav {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .navbar-nav .nav-link {
-                padding: 10px;
-                font-size: 14px;
-                /* Adjust font size for smaller screens */
-            }
-
+          
             /* Remove background image on mobile */
             .imag {
                 display: none;
@@ -536,17 +430,7 @@
         /* Mobile First Approach for screens up to 767px */
         @media (max-width: 767px) {
 
-            /* Navbar */
-            .navbar-nav {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .navbar-nav .nav-link {
-                padding: 10px;
-                font-size: 15px;
-                /* Adjust font size for slightly bigger mobile screens */
-            }
+         
 
             /* Remove background image on mobile */
             .imag {
@@ -652,80 +536,7 @@
         @media (max-width: 768px) {
 
 
-            /* Increase height of navbar when expanded */
-            .navbar-collapse.collapse.show {
-
-                height: 350px;
-                /* Adjust the height automatically */
-                padding: -20px;
-                z-index: 1000;
-                border: none;
-
-            }
-
-
-            .navbar-collapse {
-                overflow: hidden;
-                /* Ensure content does not overflow */
-                transition: max-height 0.3s ease-in-out;
-                /* Smooth transition */
-                background-color: #1652b4;
-                /* Same color as navbar */
-                width: 100%;
-            }
-
-            /* Navbar items on mobile */
-            .navbar-nav {
-                display: flex;
-                flex-direction: column;
-                /* Stack items vertically */
-                text-align: center;
-                /* Center align text */
-                background-color: #1652b4;
-                /* Same as navbar color */
-                padding-top: 10px;
-                /* Add space at the top */
-                border: none;
-
-            }
-
-            .navbar-nav .nav-item {
-                padding: 10px 0;
-                /* Add space between items */
-            }
-
-            .navbar-nav .nav-link {
-                color: white;
-                /* White color for the text */
-                font-size: 18px;
-                /* Adjust font size for readability */
-            }
-
-            /* Button adjustment for mobile screens */
-            .login-signup {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-                margin-top: 20px;
-            }
-
-            .login-signup .btn {
-                width: 80%;
-                /* Make buttons full-width on mobile */
-            }
-
-
-            /* .navbar-nav {
-                    flex-direction: column;
-                    text-align: center;
-                }
-
-                .navbar-nav .nav-link {
-                    padding: 10px;
-                }
-                 */
-
+         
             .container-fluid {
                 text-align: center;
                 padding-left: -20%;
@@ -856,20 +667,7 @@
         /* Tablet (portrait) */
         @media (min-width: 769px) and (max-width: 1024px) {
 
-            /* Centering and stacking navbar items */
-            .navbar-nav {
-                flex-direction: column;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-                gap: 10px;
-            }
-
-            .navbar-nav .nav-item {
-                width: 100%;
-                text-align: center;
-                padding: 5px 0;
-            }
+           
 
             /* Styling login and register buttons */
             .login-signup {
@@ -885,23 +683,7 @@
                 font-size: 14px;
             }
 
-            /* Navbar toggler adjustments */
-            .navbar-toggler {
-                margin-right: 10px;
-            }
-
-
-
-            /* Navbar */
-            .navbar-nav {
-                flex-direction: row;
-                text-align: center;
-            }
-
-            .login-signup {
-                margin-left: 100px;
-                margin-bottom: 20px;
-            }
+           
 
             /* Image Styling */
 
@@ -959,10 +741,7 @@
         /* Desktop */
         @media (min-width: 1025px) {
 
-            /* Navbar */
-            .navbar-nav {
-                flex-direction: row;
-            }
+          
 
 
 

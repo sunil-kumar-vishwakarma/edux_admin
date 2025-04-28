@@ -301,6 +301,14 @@
   </style>
 
 
+<script>
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const isExpanded = navbarCollapse.style.display === 'flex';
+  navbarCollapse.style.display = isExpanded ? 'none' : 'flex';
+});
+</script>
+
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -31,55 +31,6 @@ html, body {
 
 
 
-
-.navbar {
-padding: 5px 0;
-width: 100%;
-height:100px;
-background-color: #1652b4;
-}
-
-.navbar-nav .nav-link {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 5px 15px;
-    position: relative;
-}
-
-.btn-group a .btn{
-      border:1px solid white ;
-      font-weight:bold;
-}
-
-.btn-group a .btn-outline-primary{
-  color: blue;
-
-}
-
-.btn-group a .btn:hover{
-  background-color:white;
-  color: black;
-}
-
-
-.navbar-nav .nav-item {
-font-weight: bold;
-font-size: 17px;
-margin-left: 13px;
-}
-
-.navbar-nav .nav-link:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -8px;
-    height: 2px;
-    background-color: white;
-    border-radius: 1px;
-}
-
 .btn-group {
 margin-left: 10px;
 color: white;
@@ -298,11 +249,6 @@ color: #524da8;
     border-radius: 10px;
   }
   
-  #Personalized .navbar-brand img{
-    width: 90px;
-    /* margin-right: 150px; */
-    height: 170px;
-  }
   
   .hero-text {
     font-size: 28px;
@@ -470,36 +416,7 @@ color: #524da8;
     }
     
    
-    /* Navbar */
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 0;
-    }
-    .navbar-nav .nav-item {
-      font-size: 14px;
-      margin-left: 0;
-      margin-bottom: 10px;
-    }
     
-   #navbarNav {
-      background-color: #1652b4;
-   }
-
-    .navbar .nav-item .nav-link {
-      color: white;
-      text-align: center;
-    }
-
-    .navbar .btn-group {
-      margin-left: 120px;
-    }
-    
-  .login-signup {
-    margin-left: 100px;
-    margin-bottom: 20px;
-}
-
 
   
     /* Hero Section */
@@ -530,16 +447,7 @@ color: #524da8;
   
   
   
-    .imag-background {
-      background-image: url(images/student_background.webp);
-      background-size: cover; /* Cover the container while maintaining aspect ratio */
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat;
-      margin: 0;
-      padding: 20px 10px; /* Add padding for spacing */
-      height: auto; /* Allow height to adjust based on content */
-      text-align: center; /* Center text and content */
-    }
+  
   
     .imag-background h2,
     .imag-background p,
@@ -693,7 +601,9 @@ color: #524da8;
 
 
     #Personalized{
-     margin-left: -0.2px;
+      margin-left: -1.2px;
+      width: auto;
+      text-align: center;
     }
    
     #Personalized .hero-button{
@@ -750,29 +660,7 @@ color: #524da8;
   
   /* General Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Navbar Adjustments */
-    .navbar-brand img {
-        height: 50px !important;
-        margin-left: 10px;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .login-signup {
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .login-signup a {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-    
-    div#navbarNav {
-    background-color: #1652b4;
-}
+  
 
     /* Background Image Content */
     .imag-background {
@@ -916,89 +804,6 @@ color: #524da8;
 
 /* student css file  */
 
-
-.navbar-brand{
-    display: flex;
-    gap: 15px;
-}
-
-
- .navbar-brand img {
-    height: 70px !important;
-    width: auto;
-        margin-left: 17.5px;
-    
-}
-
-
-.navbar-brand div{
-    font-size: 27px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-weight: bold;
-    margin-top: 17px;
-}
-    
-        .login-signup a {
-    background-color: blue;
-    color: white;
-    font-weight: 550;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border:1px solid white;
-}
-.login-signup a:hover {
-    background-color: white;
-    color: black;
-}
-
-
-
-
-.navbar {
-padding: 5px 0;
-width: 100%;
-height:100px;
-background-color: #1652b4;
-}
-
-.navbar-nav .nav-link {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 5px 15px;
-    position: relative;
-}
-
-.btn-group a .btn{
-      border:1px solid white ;
-      font-weight:bold;
-}
-
-.btn-group a .btn-outline-primary{
-  color: blue;
-
-}
-
-.btn-group a .btn:hover{
-  background-color:white;
-  color: black;
-}
-
-.navbar-nav .nav-item {
-font-weight: bold;
-font-size: 17px;
-margin-left: 13px;
-}
-.navbar-nav .nav-link:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -8px;
-    height: 2px;
-    background-color: white;
-    border-radius: 1px;
-}
 
 
 
@@ -1206,16 +1011,7 @@ input[type="password"] {
         }
                                    /* Mobile First Approach for screens up to 576px */
 @media (max-width: 576px) {
-    /* Navbar */
-    .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 10px;
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
+   
 
     /* Remove background image on mobile */
     .imag {
@@ -1272,23 +1068,10 @@ input[type="password"] {
   
 }
 
-/* Mobile First Approach for screens up to 767px */
+
 @media (max-width: 767px) {
-    /* Navbar */
-    .navbar-nav { 
-        flex-direction: column;
-        text-align: center;
-    }
+ 
 
-    .navbar-nav .nav-link {
-        padding: 10px;
-        font-size: 15px; /* Adjust font size for slightly bigger mobile screens */
-    }
-
-    /* Remove background image on mobile */
-    .imag {
-        display: none;
-    }
 
     /* Card Styling */
     .card1 .card {
@@ -1344,75 +1127,20 @@ input[type="password"] {
 /* Mobile First Approach */
 @media (max-width: 768px) {
 
+  .imag-background {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 0px 32px;
+}
 
- /* Increase height of navbar when expanded */
- .navbar-collapse.collapse.show {
-     
-        height: 350px; /* Adjust the height automatically */
-        padding: -20px;
-        z-index: 1000;
-        border: none;
-        
-    }
+.text-content button{
+  height: 44px;
+  width: 178px;
+  margin-top: -11px;
+}
 
-
-    .navbar-collapse{
-      overflow: hidden; /* Ensure content does not overflow */
-      transition: max-height 0.3s ease-in-out; /* Smooth transition */
-      background-color: #1652b4; /* Same color as navbar */
-      width: 100%;
-    }
-
-    /* Navbar items on mobile */
-    .navbar-nav {
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center align text */
-        background-color: #1652b4; /* Same as navbar color */
-        padding-top: 10px; /* Add space at the top */
-        border: none;
-     
-    }
-
-    .navbar-nav .nav-item {
-        padding: 10px 0; /* Add space between items */
-    }
-
-    .navbar-nav .nav-link {
-        color: white; /* White color for the text */
-        font-size: 18px; /* Adjust font size for readability */
-    }
-
-    /* Button adjustment for mobile screens */
-    .login-signup {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-top: 20px;
-    }
-
-    .login-signup .btn {
-        width: 80%; /* Make buttons full-width on mobile */
-    }
-
-
-    /* .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 10px;
-    }
-     */
-
-    .container-fluid{
-      text-align: center;
-      padding-left: -20%;
-    }
-
-    
     /* Card Styling */
     .card1 .card {
         width: 100%;
@@ -1459,6 +1187,13 @@ input[type="password"] {
         margin-top: 20px;
     }
 
+    .added{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     /* Input Icon (Eye button inside password field) */
     .input-icon {
         position: relative;
@@ -1491,56 +1226,7 @@ input[type="password"] {
 /* Tablet (portrait) */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    /* Centering and stacking navbar items */
-    .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        gap: 10px;
-    }
-
-    .navbar-nav .nav-item {
-        width: 100%;
-        text-align: center;
-        padding: 5px 0;
-    }
-
-    /* Styling login and register buttons */
-    .login-signup {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        padding-top: 10px;
-    }
-
-    .login-signup .btn {
-        flex: 0 0 auto;
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    /* Navbar toggler adjustments */
-    .navbar-toggler {
-        margin-right: 10px;
-    }
-    
-    
-   
-    /* Navbar */
-    .navbar-nav {
-        flex-direction: row;
-        text-align: center;
-    }
-    
-    .login-signup {
-    margin-left: 100px;
-    margin-bottom: 20px;
-}
-
-    /* Image Styling */
-    
-
+ 
     /* Card Styling */
     .card1 .card {
         width: 80%;
@@ -1576,13 +1262,7 @@ input[type="password"] {
 
 /* Desktop */
 @media (min-width: 1025px) {
-    /* Navbar */
-    .navbar-nav {
-        flex-direction: row;
-    }
-
-   
-
+  
     /* Card Styling */
     .card1 .card {
         width: 450px;

@@ -1831,6 +1831,15 @@ video {
 
     }
 
+    .dropdown-menu{
+        display: flex;
+            flex-direction: column;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 90px;
+    }
+
     .navbar-toggler {
         border: none;
         background-color: transparent;

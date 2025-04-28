@@ -493,8 +493,9 @@ color: #524da8;
     }
 
 .cont{
-  margin-left: -100px;
- 
+  margin-left: -72px;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .cont h2{
@@ -524,7 +525,7 @@ color: #524da8;
       width: auto; /* Allow button to size dynamically */
       padding: 10px 20px; /* Add padding for better touch usability */
       font-size: 14px; /* Adjust font size */
-                 margin-left: -460px;
+      margin-left: -400px;
     }
 
     .work {
@@ -1136,9 +1137,16 @@ input[type="password"] {
 }
 
 .text-content button{
-  height: 44px;
-  width: 178px;
-  margin-top: -11px;
+  
+  margin-top: -11px; 
+  height: auto;
+  width: auto;
+
+}
+
+.text-content button a{
+  font-weight: bold;
+  font-size: 13px;
 }
 
     /* Card Styling */

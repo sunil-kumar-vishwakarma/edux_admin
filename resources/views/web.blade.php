@@ -3,20 +3,10 @@
 @section('content')
 <br><br><br>
 <link rel="stylesheet" href="{{asset('css/events.css')}}">
+
+
 <style>
-  .navbar{
-        margin-top: -20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        font-family: sans-serif;
-    }
-
-    .navbar h1{
-        color: blue;
-    }
-
+ 
     small{
         gap: 50px;
         padding-right: 20px;
@@ -209,6 +199,17 @@
         text-align: center;
         padding: 10px 0;
     }
+
+    .navbar-toggler:hover {
+    text-decoration: none;
+    width: auto;
+}
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
     .supp {
         flex-direction: column;
         align-items: center;
@@ -519,3 +520,13 @@
   });
 
 </script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

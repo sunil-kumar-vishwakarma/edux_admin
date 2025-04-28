@@ -3,7 +3,7 @@
         <!-- Brand/Logo -->
         <a class="navbar-brand" href="{{ '/' }}">
             <img src="{{ asset('images/edu-x white.png') }}" alt="Edu-X Logo" height="70" width="70">
-            <div>Edu-X</div>
+            <div>Edu-X Services</div>
         </a>
 
         <!-- Toggle button for mobile screens -->
@@ -44,3 +44,5 @@
         </div>
     </div>
 </nav>
+
+

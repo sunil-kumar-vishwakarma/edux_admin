@@ -1795,6 +1795,8 @@ video {
 
     .navbar-collapse.show {
         display: block;
+        background: #1652b4;
+
     }
 
     .navbar-toggler {
@@ -1823,6 +1825,10 @@ video {
 
     .navbar-collapse.show {
         display: block;
+    }
+
+    .navbar-brand div{
+        font-size: 18px;
     }
 }
 
@@ -2269,6 +2275,10 @@ video {
         max-width: 100%;
         width: 508px;
         margin-left: 197px;
+    }
+
+    .dropdown-menu{
+        margin: 0px 89px;
     }
 
     button.btn2 {

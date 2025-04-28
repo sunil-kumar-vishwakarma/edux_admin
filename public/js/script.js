@@ -79,17 +79,17 @@ document.addEventListener('DOMContentLoaded', function () {
             toggleDropdown(event);
         });
     }
-
-    
 });
 
 const button = document.getElementById('myButton');
 console.log(button);  // Check if the element is found
 
-if (button) {
+if (button) { 
     button.addEventListener('click', function() {
         alert('Button clicked!');
     });
 } else {
     console.log('Button not found');
 }
+
+

@@ -1444,6 +1444,10 @@ body {
     max-width: 90%;
   }
 
+  .contact-data{
+     width:100%;
+}
+
 
   .video1,
   .form {
@@ -1596,6 +1600,16 @@ body {
   width: 400px;
 }
 
+.study-programs{
+     flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin: 3px -8px;
+}
+
+.partcont{
+      flex-direction: column;
+}
 
 .card-container{
   margin-left: -200px;
@@ -1707,12 +1721,18 @@ body {
     padding: 10px; /* Add padding for better layout */
   }
 
+  .help-logo {
+       flex-direction: column;
+       gap:10px;
+  }
+
   .help .hlogo {
     width: 90%; /* Adjust hlogo width for mobile */
     max-width: 300px; /* Optional: Limit maximum width */
     margin: 0 auto; /* Center hlogo within its container */
     text-align: center; /* Align content inside hlogo */
   }
+
 
 
 
@@ -1751,10 +1771,13 @@ body {
   }
 
    .video2{
-  display:flex;
-  gap:80px;
-  justify-content:center;
-  }
+          display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+  
+
 
   .programs {
     margin-top: 20px;

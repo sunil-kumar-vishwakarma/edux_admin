@@ -107,7 +107,8 @@
 
         .tab-nav-webinar-learn {
             text-align: center;
-            margin-top: -60px;
+         margin-top: 19px;
+
         }
 
         .tab-nav-webinar-learn button {
@@ -358,7 +359,7 @@
             .background-img {
                 height: 486px;
                 /* Adjust for tablets */
-                margin: -32px -20px;
+                      margin: -32px -1px;
 
             }
 
@@ -376,9 +377,27 @@
                 font-size: 1.1rem;
             }
 
+            .tab-nav-webinar-learn {
+               display:none;
+            }
+
+            .service{
+                margin-top: -30px;
+                margin-bottom: 130px;
+            }
+
+            .card1-webinars #card1{
+              display:none;
+            }
+
             .hero {
-                margin-top: 357px;
-                transform: translateY(-149px);
+                transform: translateY(-49px);
+                margin-bottom: 200px;
+            }
+
+            .visa{
+               display:flex;
+               flex-direction:column;
             }
 
             .service p {
@@ -387,10 +406,11 @@
 
 
             .card1-webinars {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                margin-left: -155px;
+                       display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+        margin-left: -236px;
             }
 
             .card1-webinars .card-webinar-learn {
@@ -407,6 +427,7 @@
                 width: 307px;
                 margin: -125px 25px;
                 margin-top: -251px;
+                        margin-bottom: 1px;
             }
 
             .conte h1 {
@@ -754,7 +775,7 @@
 
 
                     <div class="card1-webinars">
-                        <div class="row-cols-1 row-cols-md-3 g-4" id="card1" style="display: flex;">
+                        <div class="row-cols-1 row-cols-md-3 g-4" id="card1">
                             <div class="col">
                                 <div class="card-webinar-learn">
                                     <img src="{{ asset('images/Canada-Study-Permit-Processing-Times-Falling-q8awoecm53hn8hwocxuqxnf3deq9nnh2p9klnrj2dc.png') }}"
@@ -1210,3 +1231,13 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
     
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

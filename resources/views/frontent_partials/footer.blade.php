@@ -152,6 +152,7 @@
 
   .custom-footer-container {
     padding: 0 10px;
+    text-align:center;
   }
 }
 </style>
